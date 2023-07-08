@@ -1,0 +1,328 @@
+
+header  {
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    margin: 0px;
+}
+
+
+.logo {
+    background-image: url(images/etnodim-logo-main-removebg-preview\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 95px;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+
+.burger_menu_container {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 9px;
+    flex-shrink: 0;
+}
+.menu {
+    width: 20px;
+    height: 9px;
+    flex-shrink: 0;
+}
+.left_desktop {
+    display: none;
+}
+
+
+.search_container {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.search {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+}
+
+
+.cart_container {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    position: relative;
+}
+.cart_only {
+    width: 14px;
+    height: 17px;
+    flex-shrink: 0; 
+    margin: 1px 3px 3px 4px; 
+}
+.cart {
+    width: 14px;
+    height: 17px;
+    flex-shrink: 0;
+}
+.round {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+}
+.right_desktop {
+    display: none;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.left_part_header {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 33px;
+    height: 100%;
+}
+
+.right_part_header {
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+footer {
+    background: #F4F4F4;
+    height: 410px;
+}
+.logo_footer_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo_footer {
+    background-image: url(images/etnodim-logo-main-removebg-preview\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 132px;
+    height: 35px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+.footer_grid {
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr;
+}
+.footer_li {
+    list-style-type: none;
+    margin: 10px 5px;
+}
+.footer_li_special {
+    list-style-type: none;
+    margin: 20px 5px 10px 5px;
+}
+.footer_red {
+    height: 23px;
+    color: #DA1F39;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.4%;
+}
+.footer_black {
+    height: 23px;
+    color: var(--black, #000);
+
+    /* 'Raleway' / paragraph */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.188%;
+}
+.footer_ul {
+    padding: 0px 0px 0px 0px;
+    margin: 15px 5px 10px 5px;
+}
+.footer_ul_bottom {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5px 15px 5px;
+}
+
+.footer_li_date {
+    margin: 5px 5px 15px 5px;
+    display: flex;
+}
+.underlined {
+    text-decoration: underline;
+}
+.footer_icons {
+    margin: 5px;
+    height: 22px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.footer_li_icons {
+    display: flex;
+    flex-direction: row;
+}
+.desktop_only {
+    display: none;
+}
+.mobile_only {
+    display: flex;
+}
+.mobile_only_block {
+    display: block;
+}
+.footer_company {
+    display: none;
+}
+.space_time_work {
+    margin-right: 22px;
+}
+
+@media screen and (min-width: 1000px) {
+    header  {
+        height: 99px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .burger_menu_container {
+        display: none;
+    }
+    .left_desktop {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0px 0px 0px 81px;
+        padding: 0px;
+    }
+    .left_menu_container_li {
+        margin-right: 30px;
+        list-style-type: none;
+    }
+    .menu_text_button_chosen {
+        color: var(--red, #DA1F39);
+
+        /* 'Raleway' / 16 bold */
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .menu_text_button {
+        color: var(--black, #000);
+
+        /* 'Raleway' / 16 regular */
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+
+    .right_part_header {
+        margin-right: 79px;
+    }
+    .menu_text_bottom {
+        color: var(--black, #000);
+        text-align: center;
+
+        /* 'Raleway' / 16 regular */
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+    }
+    .right_menu_container_li {
+        margin-right: 20px;
+        list-style-type: none;
+    }
+    .right_desktop {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .vector {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .logo {
+        width: 184px;
+        height: 48px;
+        flex-shrink: 0;
+    }
+
+
+    .desktop_only {
+        display: block;
+    }
+    .mobile_only_block {
+        display: none;
+    }
+    .footer_grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 3fr;
+    }
+    .mobile_only {
+        display: none;
+    }
+    .logo_footer {
+        background-image: url(images/etnodim-logo-main-removebg-preview\ 1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 184px;
+        height: 32px;
+        flex-shrink: 0;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .footer_icons {
+        margin-right: 15px;
+    }
+    .footer_grid {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .footer_company {
+        display: block;
+        list-style-type: none;
+        margin: 64px 5px 10px 5px;
+    }
+    .space_time_work {
+        margin-right: 20px;
+    }
+}
