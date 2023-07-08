@@ -171,13 +171,7 @@ footer {
     margin: 5px 5px 15px 5px;
     display: flex;
 }
-.footer_black_underlined {
-    color: var(--black, #000);
-    font-family: Raleway;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 166.188%;
+.underlined {
     text-decoration: underline;
 }
 .footer_icons {
@@ -193,8 +187,12 @@ footer {
     display: flex;
     flex-direction: row;
 }
-
-
+.desktop_only {
+    display: none;
+}
+.mobile_only {
+    display: block;
+}
 
 
 @media screen and (min-width: 1000px) {
@@ -277,4 +275,31 @@ footer {
         height: 48px;
         flex-shrink: 0;
     }
+
+
+    .desktop_only {
+        display: block;
+    }
+    .footer_grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr 3fr;
+    }
+    .mobile_only {
+        display: none;
+    }
+    .logo_footer {
+        background-image: url(images/etnodim-logo-main-removebg-preview\ 1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 184px;
+        height: 32px;
+        flex-shrink: 0;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .footer_icons {
+        margin-right: 15px;
+    }
+
 }
