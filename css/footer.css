@@ -1,0 +1,147 @@
+
+
+
+
+
+
+
+
+footer {
+    background: #F4F4F4;
+    height: 410px;
+}
+.logo_footer_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo_footer {
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 132px;
+    height: 35px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+.footer_grid {
+    display: grid;
+    grid-template-columns: 2fr 4fr 3fr;
+}
+.footer_li {
+    list-style-type: none;
+    margin: 10px 5px;
+}
+.footer_li_special {
+    list-style-type: none;
+    margin: 20px 5px 10px 5px;
+}
+.footer_red {
+    height: 23px;
+    color: #DA1F39;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.4%;
+}
+.footer_black {
+    height: 23px;
+    color: var(--black, #000);
+
+    /* 'Raleway' / paragraph */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.188%;
+}
+.footer_ul {
+    padding: 0px 0px 0px 0px;
+    margin: 15px 5px 10px 5px;
+}
+.footer_ul_bottom {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5px 15px 5px;
+}
+
+.footer_li_date {
+    margin: 5px 5px 15px 5px;
+    display: flex;
+}
+.underlined {
+    text-decoration: underline;
+}
+.footer_icons {
+    margin: 5px;
+    height: 22px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.footer_li_icons {
+    display: flex;
+    flex-direction: row;
+}
+.desktop_only {
+    display: none;
+}
+.mobile_only {
+    display: flex;
+}
+.mobile_only_block {
+    display: block;
+}
+.footer_company {
+    display: none;
+}
+.space_time_work {
+    margin-right: 22px;
+}
+
+@media screen and (min-width: 1000px) {
+
+    
+    .desktop_only {
+        display: block;
+    }
+    .mobile_only_block {
+        display: none;
+    }
+    .footer_grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 4fr 3fr;
+    }
+    .mobile_only {
+        display: none;
+    }
+    .logo_footer {
+        background-image: url(../images/logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 184px;
+        height: 32px;
+        flex-shrink: 0;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    .footer_icons {
+        margin-right: 15px;
+    }
+    .footer_grid {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .footer_company {
+        display: block;
+        list-style-type: none;
+        margin: 64px 5px 10px 5px;
+    }
+    .space_time_work {
+        margin-right: 20px;
+    }
+}
