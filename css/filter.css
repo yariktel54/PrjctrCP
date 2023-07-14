@@ -74,9 +74,9 @@
 aside  {
     width: 297px;
 }
-.radio_input {
+/* .radio_input {
     display: none;
-}
+} */
 .radio_box {
     width: 9px;
     height: 9px;

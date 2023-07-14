@@ -220,10 +220,6 @@ aside  {
 }
 
 
-.top_part {
-    display: none;
-}
-
 
 @media screen and (min-width: 1024px) {
     .center {
@@ -344,10 +340,7 @@ aside  {
     }
 
 
-    .top_part {
-        display: block;
-    }
-        
+
     
     
     
@@ -494,9 +487,6 @@ aside  {
         display: block;
         width: 297px;
     }
-    .radio_input {
-        display: none;
-    }
     .radio_box {
         width: 9px;
         height: 9px;
@@ -529,7 +519,7 @@ aside  {
     }
     
     
-    input:checked + .radio_check{
+    .radio_input:checked + .radio_check{
         display: block;
     }
     .radio_check{

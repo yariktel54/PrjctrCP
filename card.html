@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/top_part.css">
+    <link rel="stylesheet" href="css/card.css">
     <title>Document</title>
 </head>
 <body>
@@ -80,9 +82,73 @@
             <div class="top_part_menu_horizontal_stick"></div>
             <a href="" class="top_part_menu_p">Жінкам</a>
             <div class="top_part_menu_horizontal_stick"></div>
-            <a href="" class="top_part_menu_p_light">Жіночі вишиванки</a>
+            <a href="" class="top_part_menu_p">Жіночі вишиванки</a>
+            <div class="top_part_menu_horizontal_stick"></div>
+            <a href="" class="top_part_menu_p_light">Вишиванка з рослинним орнаментом Lito</a>
         </div>
     </div>
+    <main>
+        <div class="card">
+            <div class="left">
+                <img src="./images/card_main.png" class="main card_img" alt="Велика фотографія дівчини у вишиванці">
+                <img src="./images/card_second.png" class="card_img" alt="Рукав вишиванки">
+                <img src="./images/card_third.png" class="card_img" alt="Повернута спиною дівчина у вициванці">
+                <img src="./images/card_fourth.png" class="card_img" alt="Дівчина у вишиванці позує">
+                <img src="./images/card_fifth.png" class="card_img" alt="Усміхнена дівчина у виниванці">
+            </div>
+            <div class="right">
+                <p class="p_card">entodim</p>
+                <h1 class="h1_card">Вишиванка з рослинним<br>
+                    орнаментом Lito</h1>
+                <form action="#">
+                <div class="color_and_quantity">
+                    <p class="text_card">Колір: бежевий</p>
+                    <div class="quantity">
+                        <input type="button" id="minus">
+                        <label for="minus" class="plus_or_minus_bttn_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" class="plus_or_minus_bttn" viewBox="0 0 21 21" fill="none">
+                                <rect width="21" height="21" fill="#F4F4F4"/>
+                                <path d="M5 10H16V11H5V10Z" fill="black"/>
+                            </svg>
+                        </label>
+                        <p class="text_card_quantity">1</p>
+                        <input type="button" id="plus">
+                        <label for="plus" class="plus_or_minus_bttn_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" class="plus_or_minus_bttn" viewBox="0 0 21 21" fill="none">
+                                <rect width="21" height="21" fill="#F4F4F4"/>
+                                <path d="M9.90625 5H10.8438C10.9271 5 10.9688 5.04167 10.9688 5.125V16.125C10.9688 16.2083 10.9271 16.25 10.8438 16.25H9.90625C9.82292 16.25 9.78125 16.2083 9.78125 16.125V5.125C9.78125 5.04167 9.82292 5 9.90625 5Z" fill="black"/>
+                                <path d="M5.125 10.0312H15.625C15.7083 10.0312 15.75 10.0729 15.75 10.1562V11.0937C15.75 11.1771 15.7083 11.2187 15.625 11.2187H5.125C5.04167 11.2187 5 11.1771 5 11.0937V10.1562C5 10.0729 5.04167 10.0312 5.125 10.0312Z" fill="black"/>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <div class="size">
+                    <input type="radio" name="size" id="xxs" class="input_radio_hidden">
+                    <label for="xxs" class="label_size_radio">32 | XXS</label>
+                    <input type="radio" name="size" id="xs" class="input_radio_hidden">
+                    <label for="xs" class="label_size_radio">34 | XS</label>
+                    <input type="radio" name="size" id="s" class="input_radio_hidden">
+                    <label for="s" class="label_size_radio">36 | S</label>
+                    <input type="radio" name="size" id="m" class="input_radio_hidden">
+                    <label for="m" class="label_size_radio">38 | M</label>
+                    <input type="radio" name="size" id="l" class="input_radio_hidden">
+                    <label for="l" class="label_size_radio">40 | L</label>
+                    <input type="radio" name="size" id="xl" class="input_radio_hidden">
+                    <label for="xl" class="label_size_radio">42 | XL</label>
+                </div>
+                <a href="#" class="table_size">Таблиця розмірів</a>
+                <h2 class="price">2 800 грн.</h2>
+                <input type="submit" id="buy" class="input_hidden">
+                <label for="buy" class="buy_button">
+                    <p class="buy_button_p">купити</p>
+                </label>
+                </form>
+                <div class="q_and_a">
+
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="logo_footer_container">
             <a href="#" class="logo_footer">
