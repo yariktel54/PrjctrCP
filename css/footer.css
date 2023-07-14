@@ -8,12 +8,25 @@
 
 footer {
     background: #F4F4F4;
-    height: 410px;
+    height: 500px;
 }
 .logo_footer_container {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+.mobile_vector{
+    display: block;
+}
+.desktop_vector{
+    display: none;
+}
+.vector_scroll {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: -23px;
 }
 .logo_footer {
     background-image: url(../images/logo.png);
@@ -102,9 +115,11 @@ footer {
     margin-right: 22px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
 
-    
+    .desktop_only_flex {
+        display: flex;
+    }
     .desktop_only {
         display: block;
     }
@@ -143,5 +158,26 @@ footer {
     }
     .space_time_work {
         margin-right: 20px;
+    }
+    .mobile_vector{
+        display: none;
+    }
+    .desktop_vector{
+        display: block;
+    }
+    .vector_scroll {
+        position: absolute;
+        left: auto;
+        right: auto;
+        top: -41px;
+    }
+    .logo_footer_container {
+        position: relative;
+    }
+}
+@media screen and (min-width: 334px) {
+    footer {
+        background: #F4F4F4;
+        height: 410px;
     }
 }

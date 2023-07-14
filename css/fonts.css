@@ -142,3 +142,16 @@
     font-style: italic;
     font-weight: 100;
 }
+
+
+
+
+@font-face {
+    font-family: 'Dela Gothic One';
+    src: url("../fonts/DelaGothicOne-Regular.woff2") format("woff2"), 
+        url("../fonts/DelaGothicOne-Regular.woff") format("woff"),
+        url("../fonts/DelaGothicOne-Regular.ttf") format("truetype"),
+        url("../fonts/DelaGothicOne-Regular.eot") format("embedded-opentype");
+    font-style: normal;
+    font-weight: normal;
+}

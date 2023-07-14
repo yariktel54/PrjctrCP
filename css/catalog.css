@@ -1,0 +1,553 @@
+
+.center {
+    display: flex;
+}
+
+
+
+
+.flex_main_name {
+    margin: 10px 0px 20px 0px;
+}
+
+main {
+    margin: 0px 8px 0px 8px;
+    width: 100%;
+}
+.main_name_desktop {
+    display: none;
+}
+.main_name_mobile {
+    display: block;
+}
+.main_name_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.main_name_container_h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.main_name_right {
+    color: #000;
+
+    /* Dela / H2mob */
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 25.254px */
+    text-transform: uppercase;
+    margin: 20px 0px 10px 0px;
+}
+.two_x_two_grid_bttn {
+    display: grid;
+    grid-template-columns: 6px 6px;
+    grid-template-rows: 6px 6px; 
+    column-gap: 2px;
+    row-gap: 2px;
+    margin-right: 5px;
+}
+.three_x_three_grid_bttn {
+    display: grid;
+    grid-template-columns: 4px 4px 4px;
+    grid-template-rows: 4px 4px 4px; 
+    column-gap: 1px;
+    row-gap: 1px;
+    margin-left: 5px;
+}
+.main_name_left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.light_gray {
+    background: #565656;
+}
+.gray {
+    background: #C4C4C4;
+}
+.p_left_menu {
+    color: var(--black, #000);
+
+    /* Raleway / 12 light */
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%;
+    margin: 0px 0px 0px 13px;
+}
+.p_left_menu_button {
+    color: #000;
+
+    /* Raleway / 12 light */
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%;
+    margin: 0px 0px 0px 5px;
+}
+.left_menu_button_container {
+    display: flex;
+    align-items: center;
+}
+.small_vector {
+    margin-left: 5px;
+}
+.flex_main_name {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+}
+.display_none {
+    display: none;
+}
+
+.main_grid {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.block_img {
+    width: 100%;
+}
+.block_p {
+    color: #000;
+
+    /* Raleway / 12 light */
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%; /* 19.968px */
+    margin: 0px;
+}
+.block_h3 {
+    color: #000;
+
+        /* Raleway/paragraph bold */
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%; /* 23.268px */
+    margin: 5px 0px 0px 0px;
+}
+.block_text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    justify-content: flex-start; 
+}
+
+
+
+.see_more {
+    height: 118px;
+    position: relative;
+}
+
+
+
+.see_more {
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.see_more_p {
+    color: #000;
+
+    /* Raleway / button2 */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+}
+.see_more_button {
+    display: flex;
+    align-items: center;
+}
+.see_more_container {
+    margin-top: 51px;
+}
+.re_vector {
+    margin-left: 5px;
+}
+.pages {
+    display: none;
+}
+.fake_class_for_space {
+    display: none;
+}
+
+
+
+aside  {
+    display: none;
+}
+
+
+.top_part {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .center {
+        display: flex;
+    }
+    
+    .block_p {
+        color: #000;
+
+        /* Raleway/paragraph bold */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%; /* 23.268px */
+        margin: 10px 0px 0px 0px;
+    }
+    .block_h3 {
+        color: #000;
+
+        /* Raleway/paragraph bold */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%; /* 23.268px */
+        margin: 5px 0px 0px 0px;
+    }
+    
+    
+    
+    main {
+        margin: 0px 80px 0px 0px;
+        width: 100%;
+    }
+    .main_name_desktop {
+        height: 66px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .main_name_mobile {
+        display: none;
+    }
+    .main_name_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main_name_right {
+        color: #000;
+    
+        /* Dela / H2 */
+        font-family: 'Dela Gothic One';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140.3%;
+        text-transform: uppercase;
+        margin: 0px;
+    }
+    .two_x_two_grid_bttn {
+        display: grid;
+        grid-template-columns: 6px 6px;
+        grid-template-rows: 6px 6px; 
+        column-gap: 2px;
+        row-gap: 2px;
+        margin-right: 5px;
+    }
+    .three_x_three_grid_bttn {
+        display: grid;
+        grid-template-columns: 4px 4px 4px;
+        grid-template-rows: 4px 4px 4px; 
+        column-gap: 1px;
+        row-gap: 1px;
+        margin-left: 5px;
+    }
+    .main_name_left {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .light_gray {
+        background: #565656;
+    }
+    .gray {
+        background: #C4C4C4;
+    }
+    .p_left_menu {
+        color: var(--black, #000);
+    
+        /* Raleway / 12 light */
+        font-family: 'Raleway';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.4%;
+        margin: 0px 0px 0px 13px;
+    }
+    .p_left_menu_button {
+        color: #000;
+    
+        /* Raleway / 12 light */
+        font-family: 'Raleway';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.4%;
+        margin: 0px 0px 0px 5px;
+    }
+    .left_menu_button_container {
+        display: flex;
+        align-items: center;
+    }
+    .small_vector {
+        margin-left: 5px;
+    }
+
+
+    .top_part {
+        display: block;
+    }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .main_grid {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+    
+    .block_img {
+        width: 100%;
+    }
+    .block_p {
+        color: #000;
+    
+        /* Raleway / paragraph */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.188%;
+        margin: 0px;
+    }
+    .block_h3 {
+        color: #000;
+    
+        /* Raleway/paragraph bold */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%;
+        margin: 0px;
+    }
+    .block_text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        justify-content: flex-start; 
+    }
+    
+    
+    .see_more {
+        height: 211px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .see_more_p {
+        color: #000;
+
+        /* Raleway / button2 */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        border-bottom: 1px solid #000;
+    }
+    .see_more_button {
+        display: flex;
+        align-items: center;
+    }
+    .see_more_container {
+        margin-top: 64px;
+    }
+    .re_vector {
+        margin-left: 5px;
+    }
+    .pages {
+        margin-top: 64px;
+        display: flex;
+    }
+    .fake_class_for_space {
+        display: block;
+    }
+    .your_page {
+        color: #B0B0B0;
+
+        /* Raleway/paragraph bold */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%; /* 23.268px */
+        margin-right: 10px;
+    }
+    .other_page {
+        color: #000;
+
+        /* Raleway/paragraph bold */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%; /* 23.268px */
+        margin-right: 10px;
+    }
+
+
+
+    
+    .p_aside_button {
+        color: #000;
+    
+        /* Raleway / 12 bold */
+        font-family: 'Raleway';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 166.4%;
+        margin: 0px;
+    }
+    .radio_button {
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+    .vector_acide {
+        margin: 0px 5px;
+    }
+    aside  {
+        display: block;
+        width: 297px;
+    }
+    .radio_input {
+        display: none;
+    }
+    .radio_box {
+        width: 9px;
+        height: 9px;
+        flex-shrink: 0;
+        border: 1px solid #565656;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .radio_p {
+        color: #565656;
+    
+        /* Raleway / 12 light */
+        font-family: 'Raleway';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.4%;
+        margin: 0px;
+    }
+    .radio_label {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        margin: 5px 0px 0px 0px;
+    }
+    .sidebar_radio {
+        margin-left: 80px;
+    }
+    
+    
+    input:checked + .radio_check{
+        display: block;
+    }
+    .radio_check{
+        display: none;
+    }
+    
+    
+
+    .color {
+        margin-top: 15px;
+    }
+    .size {
+        margin-top: 29px;
+    }
+    .season {
+        margin-top: 15px;
+    }
+    .textile {
+        margin-top: 15px;
+    }
+    .sleeve {
+        margin-top: 15px;
+    }
+}

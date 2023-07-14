@@ -1,9 +1,14 @@
+html {
+    
+    scroll-behavior: smooth;
+}
 
 header  {
     height: 41px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
 body {
     margin: 0px;
@@ -27,6 +32,7 @@ body {
     width: 20px;
     height: 9px;
     flex-shrink: 0;
+    margin-right: 33px;
 }
 .menu {
     width: 20px;
@@ -89,6 +95,8 @@ a {
     align-items: center;
     margin-left: 10px;
     height: 100%;
+    position: absolute;
+    left: 0px;
 }
 
 .right_part_header {
@@ -96,14 +104,17 @@ a {
     align-items: center;
     margin-right: 9px;
     height: 100%;
+    position: absolute;
+    right: 0px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     header  {
         height: 99px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        position: relative;
     }
     .burger_menu_container {
         display: none;
