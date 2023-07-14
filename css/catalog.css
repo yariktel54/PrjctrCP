@@ -97,6 +97,7 @@ main {
 .left_menu_button_container {
     display: flex;
     align-items: center;
+    position: relative;
 }
 .small_vector {
     margin-left: 5px;
@@ -222,6 +223,8 @@ aside  {
 .top_part {
     display: none;
 }
+
+
 @media screen and (min-width: 1024px) {
     .center {
         display: flex;

@@ -1,0 +1,146 @@
+
+.main_name_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.p_filter_menu_button {
+    margin: 0px;
+    color: #000;
+
+    /* Raleway / 12 light */
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%;
+    margin: 0px;
+}
+.filter_menu_button_container {
+    margin: 6px 0px 0px 11px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.left_filters {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.right_filters {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+
+
+.flex_main_name_filters {
+    position: absolute;
+    margin-right: 26px;
+    left: 0px;
+    top: 100px;
+    background: #FFF;
+    box-shadow: 4px 4px 6px 0px rgba(135, 135, 135, 0.25), 6px 6px 8px 0px rgba(178, 178, 178, 0.25);
+}
+
+.filters_container {
+    display: flex;
+
+}
+
+
+
+
+
+.p_aside_button {
+    color: #000;
+
+    /* Raleway / 12 bold */
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.4%;
+    margin: 0px;
+}
+.radio_button {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+.vector_acide {
+    margin: 0px 5px;
+}
+aside  {
+    width: 297px;
+}
+.radio_input {
+    display: none;
+}
+.radio_box {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    border: 1px solid #565656;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio_p {
+    color: #565656;
+
+    /* Raleway / 12 light */
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%;
+    margin: 0px;
+}
+.radio_label {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 10px 0px 0px 0px;
+}
+.sidebar_radio {
+    margin-left: 80px;
+}
+
+
+input:checked + .radio_check{
+    display: block;
+}
+.radio_check{
+    display: none;
+}
+
+
+
+.color {
+    margin-top: 10px;
+}
+.size {
+    margin-top: 5px;
+}
+.season {
+    margin-top: 5px;
+}
+.textile {
+    margin-top: 10px;
+}
+.sleeve {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
