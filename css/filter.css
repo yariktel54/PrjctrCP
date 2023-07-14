@@ -74,9 +74,9 @@
 aside  {
     width: 297px;
 }
-/* .radio_input {
+.radio_input {
     display: none;
-} */
+}
 .radio_box {
     width: 9px;
     height: 9px;
@@ -109,13 +109,15 @@ aside  {
 }
 
 
-input:checked + .radio_check{
+input:checked + .radio_label .radio_check{
     display: block;
 }
 .radio_check{
     display: none;
 }
-
+.radio_input {
+    display: none;
+}
 
 
 .color {

@@ -518,14 +518,15 @@ aside  {
         margin-left: 80px;
     }
     
-    
-    .radio_input:checked + .radio_check{
+    input:checked + .radio_label .radio_check{
         display: block;
-    }
+    }   
     .radio_check{
         display: none;
     }
-    
+    .radio_input {
+        display: none;
+    }
     
 
     .color {
