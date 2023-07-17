@@ -5,46 +5,68 @@ html {
 main {
     width: 100%;
     display: block;
-}
-.card  {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0px 10px 0px 10px;
+    margin-right: 10px;
 }
 
 
 
-.left {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
-    column-gap: 10px;
-    row-gap: 10px;
-    width: 100%;
+.left_mobile_img {
+    margin: 0px 0px 0px 10px;
+    height: auto;
 }
+.left_desktop_img {
+    display: none;
+}
+
 
 
 .main {
     width: 100%;
-    grid-column: span 2;
-    grid-row: span 2;
 }
 .card_img {
-    width: 100%;
+    width: 27%;
+    margin-right: 10px;
+}
+
+
+#left_arrow {
+    display: none;
+}
+#right_arrow {
+    display: none;
+}
+.left_arrow {
+    margin: 0px 10px;
+}
+.right_arrow {
+    margin: 0px 10px;
+}
+.arrows {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 
 
 
+.img_container_grid {
+    margin-top: 5px;
+    display: flex;
+    overflow: hidden;
+    z-index: 8;
+    position: relative;;
+}
 
 
 
 .right {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin: 0px 10px;
 }
   
 
@@ -169,7 +191,7 @@ main {
     display: none;
 }
 .q_container {
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     height: 49.3px;
@@ -186,7 +208,7 @@ main {
     line-height: normal;
 }
 .a_text {
-    width: auto;
+    width: 100%;
     color: var(--black, #000);
 
     /* Raleway / 12 light */
@@ -198,7 +220,7 @@ main {
 }
 .stick_q_and_a {
     height: 0.7px;
-    width: auto;
+    width: 100%;
     background-color: #000;
 }
 
@@ -219,6 +241,21 @@ main {
 .a_text {
     display: none;
 }
+
+.color_and_quantity {
+    margin-top: 20px 0px 0px 0px;
+}
+
+
+.table_size {
+    margin: 10px 0px 0px 0px;
+}
+
+
+.price {
+    margin: 30px 0px 0px 0px;
+}
+
 
 
 
@@ -257,6 +294,9 @@ main {
     margin: 40px 0px 0px 0px;
 }
 
+.q_and_a_container {
+    margin-top: 50px;
+}
 
 .buy_button {
     display: flex;
@@ -280,6 +320,63 @@ main {
 }
 
 
+.h1_y_c_l {
+    color: var(--black, #000);
+
+    /* Dela / menu */
+    font-family: Dela Gothic One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 50px 0px 20px 0px;
+}
+
+
+.y_c_l_img {
+    margin: 20px 40px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#previous {
+    display: none;
+}
+#next {
+    display: none;
+}
+.previous {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: -33px;
+}
+.next {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: -33px;
+}
+
+.main_img_container {
+    margin-right: 10px;
+}
+
+.y_c_l_img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.main_img_container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 @media screen and (min-width: 1024px) {
     main {
         width: 100%;
@@ -289,13 +386,13 @@ main {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        /* grid-template-rows: 1fr; */
         margin: 0px;
     }
     
     
     
-    .left {
+    .left_desktop_img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* grid-template-rows: 1fr 1fr 1fr; */
@@ -303,10 +400,13 @@ main {
         row-gap: 40px;
         width: 100%;
     }
+    .left_mobile_img {
+        display: none;
+    }
     
     
     .main {
-        width: 100%;
+        width: auto;
         grid-column: span 2;
         grid-row: span 2;
     }
@@ -315,7 +415,10 @@ main {
     }
     
     
-    
+    .img_container_grid {
+        display: grid;
+        overflow: hidden;
+    }
     
     
     
@@ -534,6 +637,12 @@ main {
     }
     
     
+    .q_and_a_container {
+        margin-top: 70px;
+    }
+    
+
+
     .buy_button {
         display: flex;
         width: 217px;
