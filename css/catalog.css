@@ -144,18 +144,23 @@ main {
     color: #000;
 
     /* Raleway / 12 light */
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
     line-height: 166.4%; /* 19.968px */
     margin: 0px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    height: 40px;
 }
 .block_h3 {
     color: #000;
 
         /* Raleway/paragraph bold */
-        font-family: Raleway;
+        font-family: 'Raleway';
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
