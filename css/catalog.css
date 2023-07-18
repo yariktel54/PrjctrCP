@@ -3,11 +3,14 @@
     display: flex;
 }
 
-
+.fiters_z_index {
+    z-index: 5;
+}
 
 
 .flex_main_name {
     margin: 10px 0px 20px 0px;
+    display: flex;
 }
 
 main {
@@ -94,6 +97,17 @@ main {
     line-height: 166.4%;
     margin: 0px 0px 0px 5px;
 }
+.p_left_menu_button_filters {
+    color: #000;
+
+    /* Raleway / 12 light */
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%;
+    margin: 0px;
+}
 .left_menu_button_container {
     display: flex;
     align-items: center;
@@ -102,20 +116,34 @@ main {
 .small_vector {
     margin-left: 5px;
 }
-.flex_main_name {
-    display: flex;
+
+.display_none:checked + .fiters_z_index .left_menu_button_container .small_vector_closed {
+    display: none;
+}
+
+.display_none:checked + .fiters_z_index .left_menu_button_container .small_vector_opened {
+    display: block;
 }
 
 
+.small_vector_opened {
+    margin-left: 5px;
+    display: none;
+}
+
+.small_vector_closed {
+    margin-left: 5px;
+    display: block;
+}
 
 
+.display_none:checked ~ .flex_main_name_filters {
+    display: block;
+}
 
-
-
-
-
-
-
+.flex_main_name_filters {
+    display: none;
+}
 
 
 
@@ -343,7 +371,6 @@ aside  {
     .small_vector {
         margin-left: 5px;
     }
-
 
 
     

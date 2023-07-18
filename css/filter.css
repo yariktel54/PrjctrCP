@@ -41,6 +41,7 @@
     top: 100px;
     background: #FFF;
     box-shadow: 4px 4px 6px 0px rgba(135, 135, 135, 0.25), 6px 6px 8px 0px rgba(178, 178, 178, 0.25);
+    z-index: 2;
 }
 
 .filters_container {
@@ -48,7 +49,9 @@
 
 }
 
-
+.filters_radio_container {
+    height: 25px;
+}
 
 
 

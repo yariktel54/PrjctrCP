@@ -291,11 +291,6 @@ main {
 }
 
 
-.price {
-    margin: 30px 0px 0px 0px;
-}
-
-
 
 
 
@@ -330,7 +325,30 @@ main {
     font-style: normal;
     font-weight: 700;
     line-height: 166.2%; /* 23.268px */
-    margin: 40px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
+}
+.price_special {
+    color: #000;
+
+    /* Raleway/paragraph bold */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.2%; /* 23.268px */
+    margin: 5px 0px 0px 0px;
+}
+.no_product {
+    color: var(--red, #DA1F39);
+
+    /* Raleway / 12 light */
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.4%; /* 19.968px */
+    height: 20px;
+    margin-top: 5px;
 }
 
 .q_and_a_container {
@@ -339,15 +357,30 @@ main {
 
 .buy_button {
     display: flex;
-    width: 217px;
-    height: 50px;
     justify-content: center;
     align-items: center;
+    width: 217px;
+    height: 50px;
     gap: 10px;
     flex-shrink: 0;
     background: var(--red, #DA1F39);
     margin-top: 10px;
 }
+
+.buy_button_special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 242px;
+    height: 50px;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--red, #DA1F39);
+    margin-top: 10px;
+}
+
+
+
 .buy_button_p {
     color: #FFF;
     font-family: 'Raleway';
@@ -731,25 +764,38 @@ main {
         line-height: 166.2%; /* 23.268px */
         margin: 40px 0px 0px 0px;
     }
+    .price_special {
+        color: #000;
     
-    
+        /* Raleway/paragraph bold */
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%; /* 23.268px */
+        margin: 10px 0px 0px 0px;
+    }
+    .no_product {
+        color: var(--red, #DA1F39);
+
+        /* Raleway / 12 light */
+        font-family: 'Raleway';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.4%; /* 19.968px */
+        height: 20px;
+        margin-top: 10px;
+    }
+
+
+
+
+
     .q_and_a_container {
         margin-top: 70px;
     }
     
-
-
-    .buy_button {
-        display: flex;
-        width: 217px;
-        height: 50px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
-        background: var(--red, #DA1F39);
-        margin-top: 10px;
-    }
     .buy_button_p {
         color: #FFF;
         font-family: 'Raleway';

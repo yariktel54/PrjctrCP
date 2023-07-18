@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/top_part.css">
     <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/filter.css">
     <title>Document</title>
 </head>
 <body>
@@ -354,15 +355,292 @@
                             </a>
                         </div> -->
                         <div class="flex_main_name">
-                            <input type="radio" id="filters" class="display_none">
-                            <label for="filters">
-                                <a href="catalog_opened.html" class="left_menu_button_container">
-                                    <p class="p_left_menu_button">Фільтри</p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" class="small_vector" fill="none">
+                            <input type="checkbox" id="filters" name="filter_bttn" class="display_none">
+                            <label for="filters" class="fiters_z_index">
+                                <div class="left_menu_button_container">
+                                    <p class="p_left_menu_button_filters">Фільтри</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" class="small_vector_closed" fill="none">
                                         <path d="M1 1L5 5L9 1" stroke="black"/>
                                     </svg>
-                                </a>
-                            </label>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" class="small_vector_opened" fill="none">
+                                        <path d="M1 5L5 1L9 5" stroke="black"/>
+                                    </svg>
+                                </div>
+                            </label> 
+                            <div class="flex_main_name_filters">
+                            <div class="filters_radio_container">
+
+                            </div>
+                            <div class="filters_container">
+                                <div class="left_filters">
+                                    <div class="size">
+                                            <a href="#" class="radio_button">
+                                                <p class="p_aside_button">Розмір</p>
+                                            </a>
+                                            <div class="radio_size_buttons_size">
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="xxs_second" class="radio_input">
+                                                    <label for="xxs_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">32 | XXS (53)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="xs_second" class="radio_input">
+                                                    <label for="xs_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">34 | XS (60)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="s_second" class="radio_input">
+                                                    <label for="s_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">36 | S (60)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="m_second" class="radio_input">
+                                                    <label for="m_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">38 | M (60)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="l_second" class="radio_input">
+                                                    <label for="l_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">40 | L (60)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="xl_second" class="radio_input">
+                                                    <label for="xl_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">42 | XL (58)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="xxl_second" class="radio_input">
+                                                    <label for="xxl_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">46 | XXL (13)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="xxxl_second" class="radio_input">
+                                                    <label for="xxxl_second" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">48 | XХXL (4)</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="color">
+                                            <a href="#" class="radio_button">
+                                                <p class="p_aside_button">Колір</p>
+                                            </a>
+                                            <div class="radio_size_buttons_color">
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="color" id="white" class="radio_input">
+                                                    <label for="white" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">білий</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="black" class="radio_input">
+                                                    <label for="black" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">чорний</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="beige" class="radio_input">
+                                                    <label for="beige" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">бежевий</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="green" class="radio_input">
+                                                    <label for="green" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">зелений</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="size" id="blue" class="radio_input">
+                                                    <label for="blue" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">синій</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="right_filters">
+                                    <div class="season">
+                                            <a href="#" class="radio_button">
+                                                <p class="p_aside_button">Сезон</p>
+                                            </a>
+                                            <div class="radio_size_buttons_season">
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="season" id="easy" class="radio_input">
+                                                    <label for="easy" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">Easy collection (3)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="season" id="all_colections" class="radio_input">
+                                                    <label for="all_colections" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">Усі сезони (46)</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="textile">
+                                            <a href="#" class="radio_button">
+                                                <p class="p_aside_button">Тканина</p>
+                                            </a>
+                                            <div class="radio_size_buttons_textile">
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="textile" id="linen" class="radio_input">
+                                                    <label for="linen" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">Льон (60)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="textile" id="satin" class="radio_input">
+                                                    <label for="satin" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">Льон (60)</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="sleeve">
+                                            <a href="#" class="radio_button">
+                                                <p class="p_aside_button">Рукав</p>
+                                            </a>
+                                            <div class="radio_size_buttons_sleeve">
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="sleeve" id="long" class="radio_input">
+                                                    <label for="long" class="radio_label">
+                                                        <div class="radio_box">
+                                                        <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" fill="white"/>
+                                                            <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="radio_p">Довгий рукав (49)</p>
+                                                    </label>
+                                                </div>
+                                                <div class="radio_block_button">
+                                                    <input type="checkbox" name="sleeve" id="three_of_fourth" class="radio_input">
+                                                    <label for="three_of_fourth" class="radio_label">
+                                                        <div class="radio_box">
+                                                            <svg width="8px" height="8px" viewBox="0 0 24 24" fill="none" class="radio_check" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="24" height="24" fill="white"/>
+                                                                <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <p class="radio_p">3/4 рукав (11)</p>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                         <div class="flex_main_name">
                             <input type="radio" id="sort_filters" class="display_none">
