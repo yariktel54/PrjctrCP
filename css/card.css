@@ -2,6 +2,10 @@ html {
     width: 100%;
 }
 
+body {
+    position: relative;
+}
+
 main {
     width: 100%;
     display: block;
@@ -937,5 +941,4 @@ main {
         width: 390px;
         background: var(--red, #DA1F39);
     }
-
 }
