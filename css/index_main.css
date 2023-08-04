@@ -1,0 +1,581 @@
+html {
+    width: 100%;
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.main_container {
+    width: 100%;
+    max-width: 1440px;    
+}
+
+
+
+
+.margin_yes_mobile_10px {
+    margin: 0px 10px;
+    width: calc(100% - 20px);
+}
+
+
+
+
+
+.preview {
+    width: 100%;
+    margin: 0px;
+    height: 400px;
+    background-image: url(../images/preview_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text_preview {
+    margin: 0px 0px 0px 15px;
+}
+
+.h1_preview {
+    color: #FFF;
+
+    /* Dela / H1mob */
+    font-family: 'Dela Gothic One';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112.3%; /* 26.952px */
+    text-transform: uppercase;
+    margin: 0px 0px 5px 0px;
+}
+
+.p_preview {
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px 0px 30px 0px;
+    height: 23px;
+}
+
+.button_first_type {
+    display: flex;
+    width: 170px;
+    height: 16px;
+    padding: 17px 22.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--red, #DA1F39);
+}
+
+.button_p {
+    width: 170px;
+    height: 16px;
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.svg_preview_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.svg_vector_mobile {
+    display: block;
+    position: absolute;
+    bottom: -23px;
+}
+
+.svg_vector_desktop {
+    display: none;
+}
+
+
+
+
+
+
+.tranparent_text_and_images {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent_text_and_images_container {
+    width: 100%;
+    height: 238px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+}
+
+.first_t_t_i_first {
+    align-self: start;
+    width: 94px;
+    height: 119px;
+    flex-shrink: 0;
+    margin: 0px 25px 0px;
+}
+
+.first_t_t_i_second {
+    align-self: end;
+    width: 94px;
+    height: 119px;
+    flex-shrink: 0;
+    margin: 0px 25px 0px;
+}
+
+.t_t_i_p {
+    color: var(--black, #000);
+    text-align: center;
+
+    /* Dela / H2mob */
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 25.254px */
+    text-transform: uppercase;
+    position: absolute;
+    top: 69px;
+    mix-blend-mode: difference;
+    background-color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+.slided_down_block_first {
+    margin: 50px 0px 40px;
+    height: 239px;
+    width: 100%;
+    background-image: url(../images/slided_down_background_first.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slided_down_block_container_first {
+    position: absolute;
+    top: 21px;
+    width: calc(100% - 20px);
+    /* max-width: 355px; */
+    height: 239px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slided_down_left_block {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slided_down_right_block {
+    height: 100%;
+    width: 70%;
+    background-image: url(../images/slided_down_first_left_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.name_slided_down {
+    color: var(--gray, #939694);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Raleway';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.title_slided_down {
+    color: var(--black, #000);
+    text-align: center;
+
+    /* Dela / H2mob */
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 25.254px */
+    text-transform: uppercase;
+}
+
+.text_slided_down  {
+    display: none;
+}
+
+.button_second_type {
+    display: flex;
+    width: 102px;
+    height: 16px;
+    padding: 17px 53px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #DA1F39;
+}
+
+.button_container {
+    display: none;
+}
+
+.slided_down_text_mobile {
+    display: block;
+}
+
+.mobile_slided_down_p {
+    color: var(--black, #000);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* Raleway / paragraph */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.188%; /* 23.266px */
+    margin: 0px 10px 20px;
+}
+
+.button_container_mobile { 
+    display: flex;
+    width: 102px;
+    height: 16px;
+    padding: 17px 53px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #DA1F39;
+    margin: 0px auto 0px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+.main_container {
+    width: 100%;
+    max-width: 1440px;    
+}
+
+
+
+
+
+.margin_yes_mobile_10px {
+    margin: 0px;
+    /* width: auto; */
+}
+
+
+
+
+
+.preview {
+    width: calc(100% - 160px);
+    margin: 0px 80px 0px;
+    height: 449px;
+    background-image: url(../images/preview_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 0%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text_preview {
+    margin: 0px 0px 0px 88px;
+}
+
+.h1_preview {
+    color: #FFF;
+
+    /* Dela / H1 */
+    font-family: 'Dela Gothic One';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112.3%; /* 71.872px */
+    text-transform: uppercase;
+    margin: 0px 0px 10px 0px;
+}
+
+.p_preview {
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px 0px 50px 0px;
+    height: 19px;
+}
+
+.button_first_type {
+    display: flex;
+    width: 170px;
+    height: 16px;
+    padding: 17px 22.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--red, #DA1F39);
+}
+
+.button_p {
+    width: 170px;
+    height: 16px;
+    color: #FFF;
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin: 0px;
+    display: block;
+}
+
+.svg_preview_container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.svg_vector_desktop {
+    display: block;
+    position: absolute;
+    bottom: -44px;
+}
+
+.svg_vector_mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.tranparent_text_and_images {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent_text_and_images_container {
+    width: 846px;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+    position: relative;
+}
+
+.first_t_t_i_first {
+    align-self: start;
+    width: 209px;
+    height: 264px;
+    flex-shrink: 0;
+}
+
+.first_t_t_i_second {
+    align-self: end;
+    width: 204px;
+    height: 262px;
+    flex-shrink: 0;
+}
+
+.t_t_i_p {
+    color: var(--black, #000);
+    text-align: center;
+
+    /* Dela / H2 */
+    font-family: 'Dela Gothic One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 50.508px */
+    text-transform: uppercase;
+    position: absolute;
+    top: 64px;
+    mix-blend-mode: difference;
+    background-color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+.slided_down_block_first {
+    margin: 128px 0px 210px;
+    height: 650px;
+    width: 100%;
+    background-image: url(../images/slided_down_background_first.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slided_down_block_container_first {
+    position: absolute;
+    top: 80px;
+    width: calc(100% - 160px);
+    /* max-width: 34234355px; */
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slided_down_left_block {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slided_down_right_block {
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/slided_down_first_left_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.name_slided_down {
+    color: var(--gray, #939694);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* Raleway / subheading */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0px;
+    height: 16px;
+}
+
+.title_slided_down {
+    color: var(--black, #000);
+    text-align: center;
+
+    /* Dela / H2 */
+    font-family: 'Dela Gothic One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 50.508px */
+    text-transform: uppercase;
+    margin: 0px 50px 20px;
+}
+
+.text_slided_down  {
+    color: var(--black, #000);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* Raleway / paragraph */
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.188%; /* 23.266px */
+    margin: 0px 100px 50px;
+    display: block;
+}
+
+.button_second_type {
+    display: flex;
+    width: 102px;
+    height: 16px;
+    padding: 17px 53px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #DA1F39;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.slided_down_text_mobile {
+    display: none;
+}
+
+}

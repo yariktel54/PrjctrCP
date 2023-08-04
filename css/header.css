@@ -1,192 +1,578 @@
-html {
-    
-    scroll-behavior: smooth;
+* {
+  font-feature-settings: "lnum" 1;
 }
 
-header  {
-    height: 41px;
+.cart_container {
+  position: relative;
+}
+
+header {
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 41px;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 95px;
+  height: 25px;
+  flex-shrink: 0;
+  z-index: 30;
+}
+
+.burger_menu_container {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 9px;
+  flex-shrink: 0;
+  z-index: 30;
+  margin-right: 33px;
+}
+
+.menu {
+  width: 20px;
+  height: 9px;
+  flex-shrink: 0;
+  z-index: 30;
+}
+
+.left_desktop {
+  display: none;
+}
+
+.right_desktop {
+  display: none;
+}
+
+.search_container {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.cart_container,
+.search {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+.cart {
+  width: 14px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.cart_only {
+  width: 14px;
+  height: 17px;
+  flex-shrink: 0;
+  margin: 1px 3px 3px 4px;
+}
+
+.round {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left_part_header {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  margin-left: 10px;
+  left: 0;
+}
+
+.right_part_header {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  margin-right: 9px;
+  right: 0;
+}
+#catalog_mobile:checked ~ .header_catalog_full_mobile {
+  display: block;
+  position: absolute;
+  z-index: 23;
+  left: 0px;
+  top: 0px;
+  width: calc(100% - 41px);
+  background-color: white;
+}
+
+#catalog_mobile:checked  + .header  .left_part_header  .burger_menu_container  #menu_burger {
+  display: none;
+}
+
+#catalog_mobile:checked + .header  .left_part_header  .burger_menu_container  #menu_close {
+  display: block;
+  width: 14.849px;
+  height: 14.849px;
+}
+
+.header_catalog_full {
+  display: none;
+}
+
+.header_catalog_full_mobile {
+  display: none;
+}
+
+#catalog_mobile {
+  display: none;
+}
+
+#catalog {
+  display: none;
+}
+
+#menu_close {
+  display: none;
+}
+
+.center_header_menu_block {
+  margin: 61px 0px 0px 10px;
+}
+
+.mobile_menu_header {
+  color: var(--black, #000);
+
+  /* Dela / menu */
+  font-family: "Dela Gothic One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0px 0px 30px 0px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.svg_vector_menu_mobile {
+  display: none;
+  margin: 0px 0px 0px 13px;
+}
+
+.svg_vector_menu_mobile_back {
+  display: none;
+}
+
+.mobile_menu_header:hover > .svg_container_first_menu .svg_vector_menu_mobile {
+  display: block;
+}
+
+.mobile_menu_header:hover {
+  color: var(--red, #da1f39);
+
+  /* Dela / menu */
+  font-family: "Dela Gothic One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.checkbox_header_menu_mobile {
+  display: none;
+}
+
+.submenu_header_mobile {
+  display: none;
+}
+
+.svg_container_sec_menu {
+  display: none;
+}
+
+.checkbox_header_menu_mobile:checked ~ .center_header_menu_block  .mobile_menu_header {
+  display: none;
+  color: var(--red, #da1f39);
+
+  /* Dela / menu */
+  font-family: "Dela Gothic One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0px 0px 15px 0px;
+}
+
+.checkbox_header_menu_mobile:checked ~ .center_header_menu_block  .mobile_menu_header  .svg_container_first_menu {
+  display: none;
+}
+
+.checkbox_header_menu_mobile:checked ~ .center_header_menu_block  .mobile_menu_header  .svg_container_sec_menu {
+  display: block;
+  width: 19px;
+  height: 20px;
+  flex-shrink: 0;
+  margin: 0px 13px 0px 0px;
+}
+
+.checkbox_header_menu_mobile:checked ~ .center_header_menu_block  .mobile_menu_header  .svg_container_sec_menu  .svg_vector_menu_mobile_back {
+  display: block;
+}
+
+#to_catalog:checked ~ .center_header_menu_block .catalog {
+  display: flex;
+}
+
+#to_discounts:checked ~ .center_header_menu_block .discounts {
+  display: flex;
+}
+
+#to_blog:checked ~ .center_header_menu_block .blog {
+  display: flex;
+}
+
+#to_about_us:checked ~ .center_header_menu_block .about_us {
+  display: flex;
+}
+
+#to_catalog:checked ~ .center_header_menu_block .catalog_block {
+  display: block;
+}
+
+#to_discounts:checked ~ .center_header_menu_block .discounts_block {
+  display: block;
+}
+
+#to_blog:checked ~ .center_header_menu_block .blog_block {
+  display: block;
+}
+
+#to_about_us:checked ~ .center_header_menu_block .about_us_block {
+  display: block;
+}
+
+.submenu_header_mobile {
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+
+.submenu_header_mobile_input {
+  display: none;
+}
+
+.submenu_p {
+  color: #9a9a9a;
+  font-family: "Dela Gothic One";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 5px 0px 10px 0px;
+}
+
+.double_submenu_a {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+
+  /* Raleway / paragraph */
+  font-family: "Raleway";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 166.188%; /* 23.266px */
+}
+
+li {
+  list-style-type: none;
+}
+
+.double_submenu {
+  display: none;
+}
+
+.submenu_header_mobile_input:checked + .submenu_label .submenu_p {
+  color: var(--black, #000);
+  font-family: "Dela Gothic One";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.submenu_header_mobile_input:checked + .submenu_label  .submenu_li  .double_submenu {
+  display: block;
+}
+
+.double_submenu_li {
+  margin: 0px 0px 15px 0px;
+}
+
+.double_submenu {
+  margin: 0px 0px 0px 20px;
+  padding: 0px;
+}
+
+.bottom_header_menu_block {
+  width: calc(100% - 38px);
+  margin: 0px 28px 20px 10px;
+  height: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_header_menu_text {
+  color: var(--black, #000);
+  font-variant-numeric: lining-nums proportional-nums;
+
+  /* Raleway / 16 regular */
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lang_input {
+  display: none;
+}
+
+.lang_input:checked + .bottom_header_menu_text {
+  font-weight: 700;
+}
+
+.stick_bottom_header_menu {
+  width: 1px;
+  height: 22px;
+  flex-shrink: 0;
+  background: #000;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 99px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-}
-body {
+  }
+
+  .right_desktop {
+    align-items: center;
+    height: 100%;
+    padding: 0;
+  }
+
+  .burger_menu_container {
+    display: none;
+  }
+
+  .left_desktop {
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    margin: 0 0 0 70px;
+  }
+
+  .left_menu_container_li {
+    margin-right: 30px;
+    list-style-type: none;
+  }
+
+  .menu_text_button_chosen {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: var(--red, #da1f39);
+    font-weight: 700;
+  }
+
+  .menu_text_button {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: var(--black, #000);
+    font-weight: 400;
+  }
+
+  .right_part_header {
+    margin-right: 79px;
+  }
+
+  .menu_text_bottom {
+    font-family: "Raleway";
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    color: var(--black, #000);
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+  }
+
+  .right_menu_container_li {
+    margin-right: 20px;
+    list-style-type: none;
+  }
+
+  .right_desktop {
+    display: flex;
+    margin: 0;
+  }
+
+  .vector {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .logo {
+    width: 184px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .header_catalog_full,
+  #catalog {
+    display: none;
+  }
+
+  .catalog_left_menu_text_input {
+    display: none;
+  }
+
+  #catalog:checked + .header_catalog_full {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr;
+    width: calc(100% - 140px);
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    z-index: 10;
+    padding: 30px 80px 30px 60px;
+  }
+
+  .catalog_left_menu_text {
+    color: #9a9a9a;
+
+    /* Dela / menu */
+    font-family: "Dela Gothic One";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0px 0px 25px 0px;
+    display: block;
+  }
+
+  .catalog_left_menu,
+  .center_header_menu_ul {
+    display: block;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px 0px 0px 20px;
+  }
+
+  .catalog_right_menu_img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  #for_women:checked ~ .catalog_left_menu .first {
+    color: var(--black, #000);
+  }
+  #for_women:checked ~ .catalog_center_menu .women_only {
+    display: grid;
+  }
+
+  #for_men:checked ~ .catalog_left_menu .second {
+    color: var(--black, #000);
+  }
+
+  #for_kids:checked ~ .catalog_left_menu .third {
+    color: var(--black, #000);
+  }
+
+  #accessories:checked ~ .catalog_left_menu .fourth {
+    color: var(--black, #000);
+  }
+
+  #home:checked ~ .catalog_left_menu .fifth {
+    color: var(--black, #000);
+  }
+
+  .center_header_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .women_only {
+    display: none;
+  }
+
+  .center_header_menu_li {
+    display: block;
+    margin: 0px 0px 18px 0px;
+  }
+
+  .center_header_menu_li_a {
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* Raleway / paragraph */
+    font-family: "Raleway";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.188%; /* 23.266px */
     margin: 0px;
-}
+  }
 
+  .center_header_menu_li_a:hover {
+    color: var(--red, #da1f39);
+    font-variant-numeric: lining-nums proportional-nums;
 
-.logo {
-    background-image: url(../images/logo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 95px;
-    height: 25px;
-    flex-shrink: 0;
-}
-
-
-.burger_menu_container {
-    display: flex;
-    align-items: center;
-    width: 20px;
-    height: 9px;
-    flex-shrink: 0;
-    margin-right: 33px;
-}
-.menu {
-    width: 20px;
-    height: 9px;
-    flex-shrink: 0;
-}
-.left_desktop {
-    display: none;
-}
-
-
-.search_container {
-    width: 21px;
-    height: 21px;
-    flex-shrink: 0;
-    margin-right: 15px;
-}
-.search {
-    width: 21px;
-    height: 21px;
-    flex-shrink: 0;
-}
-
-
-.cart_container {
-    width: 21px;
-    height: 21px;
-    flex-shrink: 0;
-    position: relative;
-}
-.cart_only {
-    width: 14px;
-    height: 17px;
-    flex-shrink: 0; 
-    margin: 1px 3px 3px 4px; 
-}
-.cart {
-    width: 14px;
-    height: 17px;
-    flex-shrink: 0;
-}
-.round {
-    width: 8px;
-    height: 8px;
-    flex-shrink: 0;
-    position: absolute;
-    bottom: 5px;
-    right: 0px;
-}
-.right_desktop {
-    display: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.left_part_header {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-}
-
-.right_part_header {
-    display: flex;
-    align-items: center;
-    margin-right: 9px;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-}
-
-@media screen and (min-width: 1024px) {
-    header  {
-        height: 99px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    .burger_menu_container {
-        display: none;
-    }
-    .left_desktop {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        margin: 0px 0px 0px 81px;
-        padding: 0px;
-    }
-    .left_menu_container_li {
-        margin-right: 30px;
-        list-style-type: none;
-    }
-    .menu_text_button_chosen {
-        color: var(--red, #DA1F39);
-
-        /* 'Raleway' / 16 bold */
-        font-family: 'Raleway';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .menu_text_button {
-        color: var(--black, #000);
-
-        /* 'Raleway' / 16 regular */
-        font-family: 'Raleway';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-
-    .right_part_header {
-        margin-right: 79px;
-    }
-    .menu_text_bottom {
-        color: var(--black, #000);
-        text-align: center;
-
-        /* 'Raleway' / 16 regular */
-        font-family: 'Raleway';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        display: flex;
-    }
-    .right_menu_container_li {
-        margin-right: 20px;
-        list-style-type: none;
-    }
-    .right_desktop {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .vector {
-        display: flex;
-        align-items: center;
-        margin-left: 5px;
-    }
-
-    .logo {
-        width: 184px;
-        height: 48px;
-        flex-shrink: 0;
-    }
+    /* Raleway/paragraph bold */
+    font-family: "Raleway";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.2%; /* 23.268px */
+  }
 }
