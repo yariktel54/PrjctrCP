@@ -8,75 +8,483 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/top_part.css">
     <link rel="stylesheet" href="css/catalog.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/index_main.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <title>Головна - ETNODIM</title>
 </head>
 <body>
     <header id="header">
-        <div class="left_part_header">
-            <a href="#" class="burger_menu_container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="9" viewBox="0 0 20 9" fill="none" class="menu">
-                    <rect width="20" height="1" fill="black"/>
-                    <rect y="4" width="20" height="1" fill="black"/>
-                    <rect y="8" width="10" height="1" fill="black"/>
-                </svg>
+        <input type="checkbox" name="header_checkbox" id="catalog_mobile">
+        <div class="header">
+            <div class="left_part_header">
+                <label for="catalog_mobile" class="burger_menu_container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="9" viewBox="0 0 20 9" fill="none" class="menu" id="menu_burger">
+                        <rect width="20" height="1" fill="black"/>
+                        <rect y="4" width="20" height="1" fill="black"/>
+                        <rect y="8" width="10" height="1" fill="black"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none" class="menu" id="menu_close">
+                        <rect x="1.2832" y="0.0753174" width="20" height="1" transform="rotate(45 1.2832 0.0753174)" fill="black"/>
+                        <rect x="0.576172" y="14.2174" width="20" height="1" transform="rotate(-45 0.576172 14.2174)" fill="black"/>
+                    </svg>
+                </label>
+                <ul class="left_desktop">
+                    <li class="left_menu_container_li"><label for="catalog"><p class="menu_text_button_chosen">Каталог</p></label></li>
+                    <li class="left_menu_container_li"><a href="#" class="menu_text_button">Знижки</a></li>
+                    <li class="left_menu_container_li"><a href="#" class="menu_text_button">Блог</a></li>
+                    <li class="left_menu_container_li"><a href="#" class="menu_text_button">Про нас</a></li>
+                </ul>
+            </div>
+            <a href="./index.html" class="logo">
             </a>
-            <ul class="left_desktop">
-                <li class="left_menu_container_li"><a href="catalog.html" class="menu_text_button_chosen">Каталог</a></li>
-                <li class="left_menu_container_li"><a href="#" class="menu_text_button">Знижки</a></li>
-                <li class="left_menu_container_li"><a href="#" class="menu_text_button">Блог</a></li>
-                <li class="left_menu_container_li"><a href="#" class="menu_text_button">Про нас</a></li>
-            </ul>
-        </div>
-        <a href="index.html" class="logo">
-        </a>
-        <div class="right_part_header">
-            <ul class="right_desktop">
-                <li class="right_menu_container_li">
-                    <a href="" class="menu_text_bottom">UA
-                        <div class="vector">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="black"/>
+            <div class="right_part_header">
+                <ul class="right_desktop">
+                    <li class="right_menu_container_li">
+                        <a href="" class="menu_text_bottom">UA
+                            <div class="vector">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="right_menu_container_li">
+                        <a href="" class="menu_text_bottom">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M17.4633 12.0937H8.71667C9.34138 11.8098 10.0182 11.5961 10.717 11.3783C11.9814 10.9843 13.2826 10.5761 14.3411 9.68637H17.4633C17.7165 9.68637 17.9216 9.48119 17.9216 9.22804C17.9216 8.97488 17.7165 8.7697 17.4633 8.7697H15.1646C15.7073 7.91968 15.8413 6.87715 15.5129 5.8131C15.0273 4.23972 13.6387 2.92452 12.1359 2.61479C10.7407 2.3269 9.18501 2.64129 7.97651 3.45519C6.91948 4.16703 6.21891 5.20186 6.00353 6.36954C5.9577 6.6184 6.12223 6.85759 6.37127 6.90343C6.61978 6.94783 6.85915 6.7849 6.90516 6.53569C7.07524 5.61257 7.6376 4.78865 8.48856 4.21573C9.49689 3.53647 10.7901 3.27221 11.9511 3.51284C13.141 3.75776 14.2457 4.81515 14.637 6.08344C14.8139 6.65636 14.9768 7.75528 14.0827 8.67911C14.0513 8.71161 14.0164 8.73846 13.9842 8.7697H4.53597C4.28281 8.7697 4.07764 8.97488 4.07764 9.22804C4.07764 9.48119 4.28281 9.68637 4.53597 9.68637H12.6532C11.9726 10.0221 11.222 10.2607 10.4444 10.5031C9.22975 10.8818 7.97969 11.274 6.93998 12.0937H4.53597C4.28281 12.0937 4.07764 12.2989 4.07764 12.552C4.07764 12.8052 4.28281 13.0104 4.53597 13.0104H6.07403C5.34472 14.1401 5.32463 15.7017 6.08481 17.0509C7.06862 18.7965 8.97912 19.4879 10.8125 19.4879C11.4498 19.4879 12.0779 19.4045 12.6544 19.2526C15.0692 18.6163 16.5667 16.9252 16.5627 14.8394C16.5624 14.5862 16.3572 14.3818 16.1044 14.3818C16.1041 14.3818 16.1037 14.3818 16.1037 14.3818C15.8505 14.3821 15.6457 14.588 15.6461 14.8408C15.65 16.8127 13.9825 17.9546 12.4209 18.3661C10.4551 18.8835 7.92191 18.4438 6.88332 16.6011C6.3147 15.5917 6.16592 14.0627 7.1832 13.0916C7.21366 13.0626 7.24703 13.0384 7.27811 13.0104H17.4633C17.7165 13.0104 17.9216 12.8052 17.9216 12.552C17.9216 12.2989 17.7165 12.0937 17.4633 12.0937Z" fill="#1D1C1A"/>
                             </svg>
-                        </div>
-                    </a>
-                </li>
-                <li class="right_menu_container_li">
-                    <a href="" class="menu_text_bottom">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path d="M17.4633 12.0937H8.71667C9.34138 11.8098 10.0182 11.5961 10.717 11.3783C11.9814 10.9843 13.2826 10.5761 14.3411 9.68637H17.4633C17.7165 9.68637 17.9216 9.48119 17.9216 9.22804C17.9216 8.97488 17.7165 8.7697 17.4633 8.7697H15.1646C15.7073 7.91968 15.8413 6.87715 15.5129 5.8131C15.0273 4.23972 13.6387 2.92452 12.1359 2.61479C10.7407 2.3269 9.18501 2.64129 7.97651 3.45519C6.91948 4.16703 6.21891 5.20186 6.00353 6.36954C5.9577 6.6184 6.12223 6.85759 6.37127 6.90343C6.61978 6.94783 6.85915 6.7849 6.90516 6.53569C7.07524 5.61257 7.6376 4.78865 8.48856 4.21573C9.49689 3.53647 10.7901 3.27221 11.9511 3.51284C13.141 3.75776 14.2457 4.81515 14.637 6.08344C14.8139 6.65636 14.9768 7.75528 14.0827 8.67911C14.0513 8.71161 14.0164 8.73846 13.9842 8.7697H4.53597C4.28281 8.7697 4.07764 8.97488 4.07764 9.22804C4.07764 9.48119 4.28281 9.68637 4.53597 9.68637H12.6532C11.9726 10.0221 11.222 10.2607 10.4444 10.5031C9.22975 10.8818 7.97969 11.274 6.93998 12.0937H4.53597C4.28281 12.0937 4.07764 12.2989 4.07764 12.552C4.07764 12.8052 4.28281 13.0104 4.53597 13.0104H6.07403C5.34472 14.1401 5.32463 15.7017 6.08481 17.0509C7.06862 18.7965 8.97912 19.4879 10.8125 19.4879C11.4498 19.4879 12.0779 19.4045 12.6544 19.2526C15.0692 18.6163 16.5667 16.9252 16.5627 14.8394C16.5624 14.5862 16.3572 14.3818 16.1044 14.3818C16.1041 14.3818 16.1037 14.3818 16.1037 14.3818C15.8505 14.3821 15.6457 14.588 15.6461 14.8408C15.65 16.8127 13.9825 17.9546 12.4209 18.3661C10.4551 18.8835 7.92191 18.4438 6.88332 16.6011C6.3147 15.5917 6.16592 14.0627 7.1832 13.0916C7.21366 13.0626 7.24703 13.0384 7.27811 13.0104H17.4633C17.7165 13.0104 17.9216 12.8052 17.9216 12.552C17.9216 12.2989 17.7165 12.0937 17.4633 12.0937Z" fill="#1D1C1A"/>
+                            <div class="vector">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="black"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="right_menu_container_li">
+                        <a href="" class="menu_text_bottom">+38 097 888 92 92</a>
+                    </li>
+                </ul>
+                <a href="#" class="search_container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" class="search">
+                        <path d="M9.65953 16.8C5.70507 16.8 2.51953 13.6145 2.51953 9.66002C2.51953 5.70556 5.70507 2.52002 9.65953 2.52002C13.614 2.52002 16.7995 5.70556 16.7995 9.66002C16.7995 13.6145 13.614 16.8 9.65953 16.8ZM9.65953 3.61848C6.30922 3.61848 3.61799 6.30971 3.61799 9.66002C3.61799 13.0103 6.30922 15.7016 9.65953 15.7016C13.0098 15.7016 15.7011 13.0103 15.7011 9.66002C15.7011 6.30971 13.0098 3.61848 9.65953 3.61848Z" fill="black"/>
+                        <path d="M14.2413 13.4399L19.3214 18.52L18.5215 19.3199L13.4414 14.2399L14.2413 13.4399Z" fill="black"/>
+                    </svg>
+                </a> 
+                <a href="cart.html" class="cart_container">
+                    <div class="cart_only">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none" class="cart">
+                            <path d="M5.08333 5.48801C5.08333 -0.495999 10.9167 -0.496004 10.9167 5.48801M2 18H14C14.5523 18 15 17.5523 15 17V6.48801C15 5.93572 14.5523 5.48801 14 5.48801H2C1.44772 5.48801 1 5.93572 1 6.48801V17C1 17.5523 1.44772 18 2 18Z" stroke="black"/>
                         </svg>
-                        <div class="vector">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                <path d="M1 1L5 5L9 1" stroke="black"/>
-                            </svg>
-                        </div>
-                    </a>
-                </li>
-                <li class="right_menu_container_li">
-                    <a href="" class="menu_text_bottom">+38 097 888 92 92</a>
-                </li>
+                    </div>
+                    <div class="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <circle cx="4" cy="4" r="4" fill="#DA1F39"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <input type="checkbox" name="header_checkbox" id="catalog">
+        <div class="header_catalog_full">
+            <input type="radio" name="header_radio" id="for_women" class="catalog_left_menu_text_input">
+            <input type="radio" name="header_radio" id="for_men" class="catalog_left_menu_text_input">
+            <input type="radio" name="header_radio" id="for_kids" class="catalog_left_menu_text_input">
+            <input type="radio" name="header_radio" id="accessories" class="catalog_left_menu_text_input">
+            <input type="radio" name="header_radio" id="home" class="catalog_left_menu_text_input">
+            <ul class="catalog_left_menu">
+                <li><label for="for_women" class="catalog_left_menu_text first">жінкам</label></li>
+                <li><label for="for_men" class="catalog_left_menu_text second">чоловікам</label></li>
+                <li><label for="for_kids" class="catalog_left_menu_text third">дітям</label></li>
+                <li><label for="accessories" class="catalog_left_menu_text fourth">аксесуари</label></li>
+                <li><label for="home" class="catalog_left_menu_text fifth">дім</label></li>
             </ul>
-            <a href="#" class="search_container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" class="search">
-                    <path d="M9.65953 16.8C5.70507 16.8 2.51953 13.6145 2.51953 9.66002C2.51953 5.70556 5.70507 2.52002 9.65953 2.52002C13.614 2.52002 16.7995 5.70556 16.7995 9.66002C16.7995 13.6145 13.614 16.8 9.65953 16.8ZM9.65953 3.61848C6.30922 3.61848 3.61799 6.30971 3.61799 9.66002C3.61799 13.0103 6.30922 15.7016 9.65953 15.7016C13.0098 15.7016 15.7011 13.0103 15.7011 9.66002C15.7011 6.30971 13.0098 3.61848 9.65953 3.61848Z" fill="black"/>
-                    <path d="M14.2413 13.4399L19.3214 18.52L18.5215 19.3199L13.4414 14.2399L14.2413 13.4399Z" fill="black"/>
+            <div class="catalog_center_menu">
+                <div class="women_only center_header_menu">
+                    <ul class="center_header_menu_ul">
+                        <li class="center_header_menu_li"><a href="#" class="center_header_menu_li_a">Вишиті сукні</a></li>
+                        <li class="center_header_menu_li"><a href="./html/catalog.html" class="center_header_menu_li_a">Жіночі вишиванки</a></li>
+                        <li class="center_header_menu_li"><a href="#" class="center_header_menu_li_a">Конструктор вишиванки</a></li>
+                    </ul>
+                    <ul class="center_header_menu_ul">
+                        <li class="center_header_menu_li"><a href="#" class="center_header_menu_li_a">Світшоти та светри</a></li>
+                        <li class="center_header_menu_li"><a href="#" class="center_header_menu_li_a">Футболки</a></li>
+                        <li class="center_header_menu_li"><a href="#" class="center_header_menu_li_a">Брюки та комбінезони</a></li>
+                    </ul>
+                    <ul class="center_header_menu_ul">
+                        <li class="center_header_menu_li"><a href="#" class="center_header_menu_li_a">Пальта та куртки</a></li>
+                        <li class="center_header_menu_li"><a href="#" class="center_header_menu_li_a">Спідниці</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog_right_menu_img">
+                <img src="./images/header_catalog_img.png" alt="Дівчина з фотоапаратом">
+            </div>
+        </div>
+        <div class="header_catalog_full_mobile">
+            <input type="checkbox" name="menu_header_mobile" id="to_catalog" class="checkbox_header_menu_mobile">
+            <input type="checkbox" name="menu_header_mobile" id="to_discounts" class="checkbox_header_menu_mobile">
+            <input type="checkbox" name="menu_header_mobile" id="to_blog" class="checkbox_header_menu_mobile">
+            <input type="checkbox" name="menu_header_mobile" id="to_about_us" class="checkbox_header_menu_mobile">
+            <div class="center_header_menu_block">
+                <div class="mobile_menu_header catalog">
+                    <label for="to_catalog" class="svg_container_sec_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile_back">
+                            <path d="M20 9.83333H1M1 9.83333L5.87611 5M1 9.83333L5.87611 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                    Каталог
+                    <label for="to_catalog" class="svg_container_first_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile">
+                            <path d="M0 9.83333H19M19 9.83333L14.1239 5M19 9.83333L14.1239 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                </div>
+                <div class="submenu_header_mobile catalog_block">
+                    <input type="radio" name="submenu_header_mobile" id="women_submenu" class="submenu_header_mobile_input">
+                    <label for="women_submenu" class="submenu_label">                
+                        <p class="submenu_p">жінкам</p>
+                        <li class="submenu_li">
+                            <ul class="double_submenu">
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Вишиті сукні</a></li>
+                                <li class="double_submenu_li"><a href="./html/catalog.html" class="double_submenu_a">Жіночі вишиванки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Конструктор вишиванки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Світшоти та светри</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Футболки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Брюки та комбінезони</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Пальта та куртки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Спідниці</a></li>
+                            </ul>
+                        </li>
+                    </label>
+                    <input type="radio" name="submenu_header_mobile" id="men_submenu" class="submenu_header_mobile_input">
+                    <label for="men_submenu" class="submenu_label">                
+                        <p class="submenu_p">чоловікам</p>
+                        <li class="submenu_li">
+                            <ul class="double_submenu">
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Вишиті сукні</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Жіночі вишиванки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Конструктор вишиванки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Світшоти та светри</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Футболки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Брюки та комбінезони</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Пальта та куртки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Спідниці</a></li>
+                            </ul>
+                        </li>
+                    </label>
+                    <input type="radio" name="submenu_header_mobile" id="kids_submenu" class="submenu_header_mobile_input">
+                    <label for="kids_submenu" class="submenu_label">                
+                        <p class="submenu_p">дітям</p>
+                        <li class="submenu_li">
+                            <ul class="double_submenu">
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Вишиті сукні</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Жіночі вишиванки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Конструктор вишиванки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Світшоти та светри</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Футболки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Брюки та комбінезони</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Пальта та куртки</a></li>
+                                <li class="double_submenu_li"><a href="#" class="double_submenu_a">Спідниці</a></li>
+                            </ul>
+                        </li>
+                    </label>
+                </div>
+                <div class="mobile_menu_header discounts">
+                    <label for="to_discounts" class="svg_container_sec_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile_back">
+                            <path d="M20 9.83333H1M1 9.83333L5.87611 5M1 9.83333L5.87611 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                    Знижки
+                    <label for="to_discounts" class="svg_container_first_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile">
+                            <path d="M0 9.83333H19M19 9.83333L14.1239 5M19 9.83333L14.1239 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                </div>
+                <div class="mobile_menu_header blog">
+                    <label for="to_blog" class="svg_container_sec_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile_back">
+                            <path d="M20 9.83333H1M1 9.83333L5.87611 5M1 9.83333L5.87611 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                    Блог
+                    <label for="to_blog" class="svg_container_first_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile">
+                            <path d="M0 9.83333H19M19 9.83333L14.1239 5M19 9.83333L14.1239 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                </div>
+                <div class="mobile_menu_header about_us">
+                    <label for="to_about_us" class="svg_container_sec_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile_back">
+                            <path d="M20 9.83333H1M1 9.83333L5.87611 5M1 9.83333L5.87611 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                    Про нас
+                    <label for="to_about_us" class="svg_container_first_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="svg_vector_menu_mobile">
+                            <path d="M0 9.83333H19M19 9.83333L14.1239 5M19 9.83333L14.1239 15" stroke="#DA1F39"/>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="bottom_header_menu_block">
+                <input type="radio" name="lang" id="ua" class="lang_input">
+                <label for="ua" class="bottom_header_menu_text">UA</label>
+                <input type="radio" name="lang" id="ru" class="lang_input">
+                <label for="ru" class="bottom_header_menu_text">RU</label>
+                <input type="radio" name="lang" id="en" class="lang_input">
+                <label for="en" class="bottom_header_menu_text">EN</label>
+
+                <div class="stick_bottom_header_menu"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M17.4638 12.0937H8.71716C9.34186 11.8098 10.0187 11.5961 10.7175 11.3783C11.9819 10.9843 13.2831 10.5761 14.3415 9.68637H17.4638C17.7169 9.68637 17.9221 9.48119 17.9221 9.22804C17.9221 8.97488 17.7169 8.7697 17.4638 8.7697H15.1651C15.7078 7.91968 15.8418 6.87715 15.5134 5.8131C15.0278 4.23972 13.6392 2.92452 12.1364 2.61479C10.7411 2.3269 9.1855 2.64129 7.977 3.45519C6.91997 4.16703 6.2194 5.20186 6.00402 6.36954C5.95819 6.6184 6.12272 6.85759 6.37176 6.90343C6.62026 6.94783 6.85964 6.7849 6.90565 6.53569C7.07573 5.61257 7.63809 4.78865 8.48905 4.21573C9.49738 3.53647 10.7906 3.27221 11.9516 3.51284C13.1415 3.75776 14.2461 4.81515 14.6375 6.08344C14.8144 6.65636 14.9773 7.75528 14.0832 8.67911C14.0518 8.71161 14.0169 8.73846 13.9847 8.7697H4.53646C4.2833 8.7697 4.07812 8.97488 4.07812 9.22804C4.07812 9.48119 4.2833 9.68637 4.53646 9.68637H12.6537C11.9731 10.0221 11.2225 10.2607 10.4448 10.5031C9.23024 10.8818 7.98018 11.274 6.94047 12.0937H4.53646C4.2833 12.0937 4.07812 12.2989 4.07812 12.552C4.07812 12.8052 4.2833 13.0104 4.53646 13.0104H6.07452C5.34521 14.1401 5.32511 15.7017 6.0853 17.0509C7.06911 18.7965 8.97961 19.4879 10.8129 19.4879C11.4503 19.4879 12.0784 19.4045 12.6549 19.2526C15.0697 18.6163 16.5672 16.9252 16.5632 14.8394C16.5629 14.5862 16.3577 14.3818 16.1049 14.3818C16.1045 14.3818 16.1042 14.3818 16.1042 14.3818C15.851 14.3821 15.6462 14.588 15.6466 14.8408C15.6505 16.8127 13.983 17.9546 12.4214 18.3661C10.4556 18.8835 7.9224 18.4438 6.88381 16.6011C6.31519 15.5917 6.16641 14.0627 7.18369 13.0916C7.21415 13.0626 7.24752 13.0384 7.2786 13.0104H17.4638C17.7169 13.0104 17.9221 12.8052 17.9221 12.552C17.9221 12.2989 17.7169 12.0937 17.4638 12.0937Z" fill="#1D1C1A" stroke="black" stroke-width="0.7"/>
                 </svg>
-            </a> 
-            <a href="#" class="cart_container">
-                <div class="cart_only">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none" class="cart">
-                        <path d="M5.08333 5.48801C5.08333 -0.495999 10.9167 -0.496004 10.9167 5.48801M2 18H14C14.5523 18 15 17.5523 15 17V6.48801C15 5.93572 14.5523 5.48801 14 5.48801H2C1.44772 5.48801 1 5.93572 1 6.48801V17C1 17.5523 1.44772 18 2 18Z" stroke="black"/>
-                    </svg>
-                </div>
-                <div class="round">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
-                        <circle cx="4" cy="4" r="4" fill="#DA1F39"/>
-                    </svg>
-                </div>
-            </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M13.0625 10.4844H11.5156V4.64062H12.375C13.1497 4.64149 13.8924 4.94961 14.4401 5.49738C14.9879 6.04515 15.296 6.78784 15.2969 7.5625C15.2969 7.69925 15.3512 7.8304 15.4479 7.9271C15.5446 8.0238 15.6757 8.07812 15.8125 8.07812C15.9493 8.07812 16.0804 8.0238 16.1771 7.9271C16.2738 7.8304 16.3281 7.69925 16.3281 7.5625C16.3269 6.51443 15.9101 5.50962 15.169 4.76852C14.4279 4.02743 13.4231 3.61056 12.375 3.60938H11.5156V2.0625C11.5156 1.92575 11.4613 1.7946 11.3646 1.6979C11.2679 1.6012 11.1368 1.54688 11 1.54688C10.8632 1.54688 10.7321 1.6012 10.6354 1.6979C10.5387 1.7946 10.4844 1.92575 10.4844 2.0625V3.60938H9.28125C8.23282 3.60938 7.22732 4.02586 6.48597 4.76722C5.74461 5.50857 5.32812 6.51407 5.32812 7.5625C5.32812 8.61093 5.74461 9.61643 6.48597 10.3578C7.22732 11.0991 8.23282 11.5156 9.28125 11.5156H10.4844V17.3594H8.9375C8.16284 17.3585 7.42015 17.0504 6.87238 16.5026C6.32461 15.9549 6.01649 15.2122 6.01562 14.4375C6.01562 14.3007 5.9613 14.1696 5.8646 14.0729C5.7679 13.9762 5.63675 13.9219 5.5 13.9219C5.36325 13.9219 5.2321 13.9762 5.1354 14.0729C5.0387 14.1696 4.98438 14.3007 4.98438 14.4375C4.98556 15.4856 5.40243 16.4904 6.14352 17.2315C6.88462 17.9726 7.88943 18.3894 8.9375 18.3906H10.4844V19.9375C10.4844 20.0743 10.5387 20.2054 10.6354 20.3021C10.7321 20.3988 10.8632 20.4531 11 20.4531C11.1368 20.4531 11.2679 20.3988 11.3646 20.3021C11.4613 20.2054 11.5156 20.0743 11.5156 19.9375V18.3906H13.0625C14.1109 18.3906 15.1164 17.9741 15.8578 17.2328C16.5991 16.4914 17.0156 15.4859 17.0156 14.4375C17.0156 13.3891 16.5991 12.3836 15.8578 11.6422C15.1164 10.9009 14.1109 10.4844 13.0625 10.4844ZM9.28125 10.4844C8.50632 10.4844 7.76313 10.1765 7.21517 9.62858C6.66721 9.08062 6.35938 8.33743 6.35938 7.5625C6.35938 6.78757 6.66721 6.04438 7.21517 5.49642C7.76313 4.94846 8.50632 4.64062 9.28125 4.64062H10.4844V10.4844H9.28125ZM13.0625 17.3594H11.5156V11.5156H13.0625C13.8374 11.5156 14.5806 11.8235 15.1286 12.3714C15.6765 12.9194 15.9844 13.6626 15.9844 14.4375C15.9844 15.2124 15.6765 15.9556 15.1286 16.5036C14.5806 17.0515 13.8374 17.3594 13.0625 17.3594Z" fill="black"/>
+                </svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M19.2383 17.4105C19.1958 17.3422 19.1403 17.2829 19.075 17.2361C19.0096 17.1892 18.9356 17.1558 18.8572 17.1376C18.7789 17.1195 18.6977 17.1169 18.6184 17.1302C18.5391 17.1435 18.4631 17.1723 18.395 17.2149C17.4644 17.7943 16.4157 18.1577 15.3262 18.2783C14.2367 18.399 13.1339 18.2738 12.0991 17.9121C11.0644 17.5503 10.1238 16.9612 9.34674 16.188C8.56966 15.4149 7.9758 14.4773 7.60884 13.4444H14.765C14.927 13.4444 15.0825 13.38 15.1971 13.2654C15.3117 13.1508 15.3761 12.9953 15.3761 12.8333C15.3761 12.6712 15.3117 12.5157 15.1971 12.4011C15.0825 12.2865 14.927 12.2221 14.765 12.2221H7.29107C7.14385 11.414 7.14385 10.5859 7.29107 9.7777H14.765C14.927 9.7777 15.0825 9.71332 15.1971 9.59871C15.3117 9.48411 15.3761 9.32867 15.3761 9.16659C15.3761 9.00451 15.3117 8.84908 15.1971 8.73447C15.0825 8.61987 14.927 8.55548 14.765 8.55548H7.60884C7.97464 7.52454 8.56645 6.5885 9.34091 5.81593C10.1154 5.04336 11.0529 4.45384 12.0847 4.09056C13.1165 3.72728 14.2165 3.59945 15.3042 3.71642C16.3918 3.83339 17.4395 4.19221 18.3705 4.76659C18.5083 4.85249 18.6745 4.88015 18.8327 4.84347C18.9908 4.8068 19.1279 4.7088 19.2138 4.57104C19.2997 4.43327 19.3274 4.26702 19.2907 4.10887C19.2541 3.95071 19.1561 3.8136 19.0183 3.7277C17.901 3.03653 16.6396 2.61195 15.3318 2.48686C14.024 2.36178 12.705 2.53956 11.4769 3.00642C10.2489 3.47328 9.14491 4.21668 8.2505 5.17898C7.3561 6.14129 6.69532 7.29664 6.3194 8.55548H2.16385C2.00177 8.55548 1.84633 8.61987 1.73172 8.73447C1.61712 8.84908 1.55273 9.00451 1.55273 9.16659C1.55273 9.32867 1.61712 9.48411 1.73172 9.59871C1.84633 9.71332 2.00177 9.7777 2.16385 9.7777H6.05662C5.99484 10.1822 5.96216 10.5907 5.95885 10.9999C5.96216 11.4091 5.99484 11.8176 6.05662 12.2221H2.16385C2.00177 12.2221 1.84633 12.2865 1.73172 12.4011C1.61712 12.5157 1.55273 12.6712 1.55273 12.8333C1.55273 12.9953 1.61712 13.1508 1.73172 13.2654C1.84633 13.38 2.00177 13.4444 2.16385 13.4444H6.3194C6.69611 14.7062 7.35901 15.864 8.25647 16.8277C9.15392 17.7913 10.2617 18.5348 11.4936 19.0002C12.7254 19.4656 14.0481 19.6404 15.3585 19.511C16.669 19.3815 17.9319 18.9513 19.0488 18.2538C19.1167 18.2109 19.1754 18.155 19.2216 18.0894C19.2678 18.0238 19.3007 17.9497 19.3183 17.8714C19.3358 17.7931 19.3378 17.7121 19.3241 17.633C19.3104 17.5539 19.2812 17.4783 19.2383 17.4105Z" fill="black"/>
+                </svg>
+            </div>
         </div>
     </header>
-    
+    <main>
+        <div class="main_container">
+            <div class="preview_container margin_yes_mobile_10px">
+                <div class="preview">
+                    <div class="text_preview">
+                        <h1 class="h1_preview">більше ніж <br>
+                            просто одяг</h1>
+                        <p class="p_preview">Нова літня колекція</p>
+                        <a href="html/catalog.html" class="button_first_type"><p class="button_p">дивитись колекцію</p></a>
+                    </div>  
+                </div>
+                <div class="svg_preview_container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="57" height="64" viewBox="0 0 57 64" fill="none" class="svg_vector_desktop">
+                        <path d="M29.5 6V62.5M29.5 62.5L44 48M29.5 62.5L14 48" stroke="#DA1F39"/>
+                        <rect x="29" width="1" height="20" fill="white"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none" class="svg_vector_mobile">
+                        <path d="M16.2667 0V30M16.2667 30L24 22.3009M16.2667 30L8 22.3009" stroke="#DA1F39"/>
+                        <path d="M15.7744 0H16.7698V9H15.7744V0Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="tranparent_text_and_images margin_yes_mobile_10px">
+                <div class="transparent_text_and_images_container">
+                    <img src="images/t_t_i_first.png" alt="Дівчина лежить на машині і дивиться на небо" class="first_t_t_i_first">
+                    <p class="t_t_i_p">etnodim - магазин дизайнерських вишиванок ручної роботи та етнічного одягу</p>
+                    <img src="images/t_t_i_second.png" alt="Дівчина обперлася і дивиться вниз" class="first_t_t_i_second">
+                </div>
+            </div>
+            <div class="slider_full_mobile margin_yes_mobile_10px">
+                <h1 class="h1_slider">вам може сподобатися</h1>  
+                <div class="slider_block">
+                    <div class="slider_img">
+                        <img src="images/new_first.png" alt="Набір для створення вишивки Home Tree Green" height="100%">
+                        <input type="button" id="next">
+                        <input type="button" id="previous">
+                        <label for="next" class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
+                                <path d="M0 19.15H39M39 19.15L28.9912 9M39 19.15L28.9912 30" stroke="#DA1F39"/>
+                            </svg>
+                        </label>
+                        <label for="previous" class="previous">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
+                                <path d="M40 19.15H1M1 19.15L11.0088 9M1 19.15L11.0088 30" stroke="#DA1F39"/>
+                            </svg>
+                        </label>
+                    </div>   
+                    <div class="slider_block_text">
+                        <p class="block_p">Набір для створення вишивки Home Tree Green</p>
+                        <h3 class="block_h3">2 120 грн.</h3>
+                    </div> 
+                </div>                
+            </div> 
+            <div class="slider_full_desktop">
+                <div class="slider_text_container">
+                    <h1 class="h1_slider">вам може сподобатися</h1> 
+                    <div class="arrows_slider">
+                        <input type="button" id="left_arrow_slider">
+                        <label for="left_arrow_slider" class="left_arrow_slider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="8" viewBox="0 0 36 8" fill="none">
+                                <path d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM36 3.5L1 3.5V4.5L36 4.5V3.5Z" fill="#DA1F39"/>
+                              </svg>
+                        </label>
+                        <input type="button" id="right_arrow_slider">
+                        <label for="right_arrow_slider" class="right_arrow_slider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="8" viewBox="0 0 36 8" fill="none">
+                                <path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#DA1F39"/>
+                              </svg>
+                        </label>
+                    </div> 
+                </div>
+                <div class="slider_container_grid">
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_second.png" alt="Чарівний Київ">
+                            <img src="images/new_first.png" alt="Набір для створення вишивки Home Tree Green" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Набір для створення вишивки Home Tree Green</p>
+                            <h3 class="block_h3">2 120 грн.</h3>
+                        </div> 
+                    </a>  
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_second.png" alt="Чарівний Київ">
+                            <img src="images/new_second.png" alt="Легка блузка вільного крою з орнаментом Indi" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Легка блузка вільного крою з орнаментом Indi</p>
+                            <h3 class="block_h3">3 800 грн.</h3>
+                        </div> 
+                    </a>  
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_second.png" alt="Чарівний Київ">
+                            <img src="images/new_third.png" alt="Легка блузка вільного крою з орнаментом Indi" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Чоловіча лльна сорочка з вишивкою Sky</p>
+                            <h3 class="block_h3">2 800 грн.</h3>
+                        </div> 
+                    </a>
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_second.png" alt="Чарівний Київ">
+                            <img src="images/new_second.png" alt="Легка блузка вільного крою з орнаментом Indi" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Легка блузка вільного крою з орнаментом Indi</p>
+                            <h3 class="block_h3">3 800 грн.</h3>
+                        </div> 
+                    </a>
+                </div>
+                <!-- <div class="slider_scroll">
+                    <div class="slider_scroller"></div>
+                </div> -->
+            </div>
+            <div class="slided_down_block_first">
+                <div class="slided_down_block_container_first">
+                    <div class="slided_down_left_block">
+                        <div class="slided_down_left_block_text">
+                            <p class="name_slided_down">etnodim</p>
+                            <h1 class="title_slided_down">капсульна колекція до дня вишиванки</h1>
+                            <p class="text_slided_down">Лімітована серія нетипових вишиванок Etnodim 
+                                створена спеціально до Дня вишиванки.
+                                
+                                Поряд із традиційною вишивкою на виробах з’явилися 
+                                «нові символи».</p>
+                            <div class="button_container">
+                                <a href="html/catalog.html" class="button_second_type"><p class="button_p">переглянути</p></a>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="slided_down_right_block">
+                    </div>
+                </div>
+            </div>
+            <div class="slided_down_text_mobile margin_yes_mobile_10px">
+                <p class="mobile_slided_down_p">Лімітована серія нетипових вишиванок Etnodim створена спеціально до Дня вишиванки.
+                    Поряд із традиційною вишивкою на виробах з’явилися «нові символи».</p>
+                <div class="button_container_mobile">
+                    <a href="html/catalog.html" class="button_second_type"><p class="button_p">переглянути</p></a>
+                </div>
+            </div>
+            <div class="slider_full_mobile margin_yes_mobile_10px">
+                <h1 class="h1_slider">знижки</h1>  
+                <div class="slider_block">
+                    <div class="slider_img">
+                        <img src="images/discount_first.png" alt="Вишиванка для дівчинки Sakura" height="100%">
+                        <input type="button" id="next">
+                        <input type="button" id="previous">
+                        <label for="next" class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
+                                <path d="M0 19.15H39M39 19.15L28.9912 9M39 19.15L28.9912 30" stroke="#DA1F39"/>
+                            </svg>
+                        </label>
+                        <label for="previous" class="previous">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="39" viewBox="0 0 40 39" fill="none">
+                                <path d="M40 19.15H1M1 19.15L11.0088 9M1 19.15L11.0088 30" stroke="#DA1F39"/>
+                            </svg>
+                        </label>
+                    </div>   
+                    <div class="slider_block_text">
+                        <p class="block_p">Вишиванка для дівчинки Sakura</p>
+                        <h3 class="block_h3"><p class="block_h3_discount">1 827 грн.</p><p class="block_h3_real">2 030 грн.</p></h3>
+                    </div> 
+                </div>                
+            </div> 
+            <div class="slider_full_desktop">
+                <div class="slider_text_container">
+                    <h1 class="h1_slider">знижки</h1> 
+                    <div class="arrows_slider">
+                        <input type="button" id="left_arrow_slider">
+                        <label for="left_arrow_slider" class="left_arrow_slider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="8" viewBox="0 0 36 8" fill="none">
+                                <path d="M0.646446 3.64645C0.451183 3.84171 0.451183 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM36 3.5L1 3.5V4.5L36 4.5V3.5Z" fill="#DA1F39"/>
+                              </svg>
+                        </label>
+                        <input type="button" id="right_arrow_slider">
+                        <label for="right_arrow_slider" class="right_arrow_slider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="8" viewBox="0 0 36 8" fill="none">
+                                <path d="M35.3536 4.35356C35.5488 4.15829 35.5488 3.84171 35.3536 3.64645L32.1716 0.464469C31.9763 0.269207 31.6597 0.269207 31.4645 0.464469C31.2692 0.659731 31.2692 0.976313 31.4645 1.17158L34.2929 4L31.4645 6.82843C31.2692 7.02369 31.2692 7.34027 31.4645 7.53554C31.6597 7.7308 31.9763 7.7308 32.1716 7.53554L35.3536 4.35356ZM-4.37114e-08 4.5L35 4.5L35 3.5L4.37114e-08 3.5L-4.37114e-08 4.5Z" fill="#DA1F39"/>
+                              </svg>
+                        </label>
+                    </div> 
+                </div>
+                <div class="slider_container_grid">
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_third.png" alt="Чарівний Київ">
+                            <img src="images/discount_first.png" alt="Вишиванка для дівчинки Sakura" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Вишиванка для дівчинки Sakura</p>
+                            <h3 class="block_h3"><p class="block_h3_discount">1 827 грн.</p><p class="block_h3_real">2 030 грн.</p></h3>
+                        </div> 
+                    </a>  
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_third.png" alt="Чарівний Київ">
+                            <img src="images/discount_second.png" alt="Чоловічий світшот бордовий VMG2" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Чоловічий світшот бордовий VMG2</p>
+                            <h3 class="block_h3"><p class="block_h3_discount">450 грн.</p><p class="block_h3_real">750 грн.</p></h3>
+                        </div> 
+                    </a>  
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_third.png" alt="Чарівний Київ">
+                            <img src="images/discount_third.png" alt="Лляна сукня темно-синього кольору Nizhnist Violet" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Лляна сукня темно-синього кольору Nizhnist Violet</p>
+                            <h3 class="block_h3"><p class="block_h3_discount">3 582 грн.</p><p class="block_h3_real">3 980 грн.</p></h3>
+                        </div> 
+                    </a>
+                    <a href="#" class="slider_block">
+                        <div class="slider_img">
+                            <img src="images/background_img_third.png" alt="Чарівний Київ">
+                            <img src="images/discount_fourth.png" alt="Лляна сорочка молочного кольору з аплікацією MALVA" class="img_real">
+                        </div>   
+                        <div class="slider_block_text">
+                            <p class="block_p">Лляна сорочка молочного кольору з аплікацією MALVA</p>
+                            <h3 class="block_h3"><p class="block_h3_discount">2 880  грн.</p><p class="block_h3_real">3 200 грн.</p></h3>
+                        </div> 
+                    </a>
+                </div>
+                <!-- <div class="slider_scroll">
+                    <div class="slider_scroller"></div>
+                </div> -->
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="logo_footer_container">
             <a href="index.html" class="logo_footer">
