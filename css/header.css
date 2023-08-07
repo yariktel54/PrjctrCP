@@ -480,7 +480,7 @@ li {
     width: calc(100% - 140px);
     background-color: white;
     position: absolute;
-    top: 100px;
+    top: 99px;
     z-index: 10;
     padding: 30px 80px 30px 60px;
   }

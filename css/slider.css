@@ -1,10 +1,10 @@
 .slider_img {
   position: relative;
-  max-width: 375px;
+  /* max-width: 375px; */
 }
 
 .slider_block {
-  max-width: 375px;
+  max-width: 575px;
   margin: 0px auto;
 }
 
@@ -53,6 +53,12 @@ main {
   align-items: center;
 }
 
+.slider_img .img_real {
+  object-fit: cover;
+  width: 101%;
+  height: 101%;
+}
+
 .slider_img img {
   object-fit: cover;
   width: 100%;
@@ -63,7 +69,7 @@ main {
   width: calc(100% - 66px);
   padding: 0 33px;
   margin-bottom: 50px;
-  max-width: 375px;
+  /* max-width: 375px; */
 }
 
 .block_p {
