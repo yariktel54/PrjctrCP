@@ -138,6 +138,13 @@ main {
     height: 119px;
     flex-shrink: 0;
     margin: 0px 25px 0px;
+    background-image: url(../images/t_t_i_first.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
 }
 
 .first_t_t_i_second {
@@ -146,6 +153,13 @@ main {
     height: 119px;
     flex-shrink: 0;
     margin: 0px 25px 0px;
+    background-image: url(../images/t_t_i_second.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
 }
 
 .t_t_i_p {
@@ -161,8 +175,49 @@ main {
     text-transform: uppercase;
     position: absolute;
     top: 69px;
-    mix-blend-mode: difference;
-    background-color: #FFF;
+    z-index: 0;
+    height: 120px;
+    background-color: transparent;
+}
+
+.first_t_t_i_negative_p_first {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2mob */
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 25.254px */
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -88px;
+    left: -25px;
+    background-color: transparent;
+    width: calc(100vw - 20px);
+    height: 120px;
+    margin: 0px;
+
+}
+
+.first_t_t_i_negative_p_second {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2mob */
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 25.254px */
+    text-transform: uppercase;
+    position: absolute;
+    top: -50px;
+    right: -25px;
+    background-color: transparent;
+    width: calc(100vw - 20px);
+    height: 120px;
 }
 
 
@@ -481,6 +536,13 @@ main {
     height: 78px;
     flex-shrink: 0;
     transform: rotateY(180deg);
+    background-image: url(../images/t_t_i_third.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
 }
 
 .second_t_t_i_second {
@@ -488,6 +550,13 @@ main {
     width: 134px;
     height: 89px;
     flex-shrink: 0;
+    background-image: url(../images/t_t_i_fourth.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
 }
 
 .second_t_t_i_p {
@@ -503,8 +572,50 @@ main {
     text-transform: uppercase;
     position: absolute;
     top: 33px;
-    mix-blend-mode: difference;
-    background-color: #FFF;
+    z-index: 0;
+    height: 120px;
+    background-color: transparent;
+}
+
+.second_t_t_i_negative_p_first {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2mob */
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 25.254px */
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 17px;
+    right: 0px;
+    background-color: transparent;
+    width: calc(100vw - 20px);
+    height: 120px;
+    transform: rotateY(180deg);
+    margin: 0px;
+
+}
+
+.second_t_t_i_negative_p_second {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2mob */
+    font-family: 'Dela Gothic One';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 25.254px */
+    text-transform: uppercase;
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    background-color: transparent;
+    width: calc(100vw - 20px);
+    height: auto;
 }
 
 
@@ -991,6 +1102,14 @@ main {
     width: 209px;
     height: 264px;
     flex-shrink: 0;
+    background-image: url(../images/t_t_i_first.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
+
 }
 
 .first_t_t_i_second {
@@ -998,6 +1117,14 @@ main {
     width: 204px;
     height: 262px;
     flex-shrink: 0;
+    background-image: url(../images/t_t_i_second.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
+
 }
 
 .t_t_i_p {
@@ -1013,8 +1140,49 @@ main {
     text-transform: uppercase;
     position: absolute;
     top: 64px;
-    mix-blend-mode: difference;
-    background-color: #FFF;
+    z-index: 0;
+    background-color: transparent;
+}
+
+.first_t_t_i_negative_p_first {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2 */
+    font-family: 'Dela Gothic One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 50.508px */
+    text-transform: uppercase;
+    position: absolute;
+    top: 202px;
+    left: -25px;
+    bottom: 61px;
+    background-color: transparent;
+    width: 846px;
+    height: 204px;
+    margin: auto;
+
+}
+
+.first_t_t_i_negative_p_second {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2 */
+    font-family: 'Dela Gothic One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 50.508px */
+    text-transform: uppercase;
+    position: absolute;
+    top: -94px;
+    right: -25px;
+    background-color: transparent;
+    width: 846px;
+    height: 204px;
 }
 
 
@@ -1292,7 +1460,7 @@ main {
     min-height: 417px;
     display: flex;
     justify-content: space-between;
-    margin: 150px 10% 100px 20%;
+    margin: 150px 0px 100px 47px;
     position: relative;
 }
 
@@ -1302,6 +1470,13 @@ main {
     height: 207px;
     flex-shrink: 0;
     transform: rotateY(180deg);
+    background-image: url(../images/t_t_i_third.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
 }
 
 .second_t_t_i_second {
@@ -1309,6 +1484,13 @@ main {
     width: 317px;
     height: 210px;
     flex-shrink: 0;
+    background-image: url(../images/t_t_i_fourth.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
 }
 
 .second_t_t_i_p {
@@ -1324,8 +1506,50 @@ main {
     text-transform: uppercase;
     position: absolute;
     top: 102px;
-    mix-blend-mode: difference;
-    background-color: #FFF;
+    z-index: 0;
+    left: 0px;
+    background-color: transparent;
+}
+
+.second_t_t_i_negative_p_first {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2 */
+    font-family: 'Dela Gothic One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 50.508px */
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 74px;
+    right: 65px;
+    background-color: transparent;
+    width: 846px;
+    height: 204px;
+    transform: rotateY(180deg);
+    margin: 0px;
+
+}
+
+.second_t_t_i_negative_p_second {
+    color: white;
+    text-align: center;
+
+    /* Dela / H2 */
+    font-family: 'Dela Gothic One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.3%; /* 50.508px */
+    text-transform: uppercase;
+    position: absolute;
+    top: 102px;
+    right: 65px;
+    background-color: transparent;
+    width: 846px;
+    height: 204px;
 }
 
 
