@@ -80,9 +80,8 @@ main {
 }
 
 .right_container {
-  width: auto;
+  width: 100%;
   margin: 0 10px;
-  max-width: 375px;
 }
 
 .p_card {
@@ -315,6 +314,7 @@ main {
 @media screen and (min-width: 1024px) {
 
   .center_cart {
+    margin: 0px auto;
     width: 100%;
     max-width: 1440px;
   }

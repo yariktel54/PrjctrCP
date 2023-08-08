@@ -48,14 +48,20 @@ footer {
 }
 
 .logo_footer {
-  background-image: url(../images/logo.png);
+  /* background-image: url(../images/logo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   width: 132px;
   height: 35px;
   flex-shrink: 0;
   margin-top: 20px;
+}
+
+.logo_footer_svg {
+  width: 132px;
+  height: 45px;
+  flex-shrink: 0;
 }
 
 .footer_grid {
@@ -159,15 +165,21 @@ footer {
   }
 
   .logo_footer {
-    background-image: url(../images/logo.png);
+    /* background-image: url(../images/logo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     width: 184px;
     height: 32px;
     flex-shrink: 0;
     margin-top: 70px;
     margin-bottom: 40px;
+  }
+
+  .logo_footer_svg {
+    width: 184px;
+    height: 32px;
+    flex-shrink: 0;
   }
 
   .footer_icons {
