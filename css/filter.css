@@ -61,6 +61,7 @@
       6px 6px 8px 0 rgba(178, 178, 178, 0.25);
     z-index: 2;
     width: calc(100% - 26px);
+    max-width: 349px;
   }
 
   .filters_container {
